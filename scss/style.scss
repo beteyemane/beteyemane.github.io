@@ -5,15 +5,16 @@ $white: white;
 *{
   box-sizing: border-box;
   font-family: "Helvetica";
-  text-transform: uppercase;
 }
 
 body {
   margin: 0;
+  background-color: $main-grey;
 }
 
+//========NAVBAR==========//
+
 header {
-  background-color:$main-grey;
   background-color:$main-grey;
   a.logo {
     color: $bright-purple;
@@ -35,9 +36,6 @@ header {
         justify-content: space-between;
         li {
           list-style: none;
-          color: $white;
-          letter-spacing: 0.1rem;
-          font-weight: 300;
           .nav-icons {
             width: 50%;
           }
@@ -47,5 +45,35 @@ header {
         }
       }
     }
+    .right-bar {
+      width: 46.86px;
+    }
   }
+}
+
+.hero {
+  color: $bright-purple;
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  h1 {
+    font-size: 75px;
+    margin: 0;
+  }
+  h1, h2 {
+    font-weight: 100;
+    letter-spacing: 0.8rem;
+  }
+  .break {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
 }
