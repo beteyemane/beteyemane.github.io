@@ -42,14 +42,14 @@ header {
     header .container .right-bar {
       width: 46.86px; }
 
-#about, #skills, #projects, #contact {
+#about, #experience, #projects, #contact {
   height: 100vh;
   padding-top: 60px; }
-  #about h1, #about p, #skills h1, #skills p, #projects h1, #projects p, #contact h1, #contact p {
+  #about h1, #about p, #experience h1, #experience p, #projects h1, #projects p, #contact h1, #contact p {
     text-align: center;
     letter-spacing: 0.1rem;
     font-weight: 100; }
-  #about h1, #skills h1, #projects h1, #contact h1 {
+  #about h1, #experience h1, #projects h1, #contact h1 {
     text-transform: uppercase; }
 
 #home {
@@ -77,18 +77,21 @@ header {
     border-radius: 50%;
     height: 200px; }
   #about .about-section .about-paragraph {
+    max-width: 500px;
+    padding: 0 20px 20px 20px; }
+  #about .about-section .icons {
     max-width: 500px; }
-
-#skills .devicon {
-  font-size: 3rem; }
+    #about .about-section .icons .devicon {
+      font-size: 3rem; }
 
 @media only screen and (max-width: 600px) {
   .about-section {
     flex-direction: column;
-    display: flex;
-    flex: wrap; }
+    display: flex; }
     .about-section .about-image-div {
       justify-content: center;
-      display: flex; } }
+      display: flex; }
+    .about-section .icons {
+      text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

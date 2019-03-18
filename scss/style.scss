@@ -61,7 +61,7 @@ header {
   }
 }
 
-#about, #skills, #projects, #contact {
+#about, #experience, #projects, #contact {
   height: 100vh;
   padding-top: 60px;
   h1, p{
@@ -100,7 +100,6 @@ header {
 }
 
 //========ABOUT=======//
-//
 
 #about {
   .about-section{
@@ -112,14 +111,19 @@ header {
     }
     .about-paragraph {
       max-width: 500px;
+      padding: 0 20px 20px 20px;
+    }
+    .icons {
+      max-width: 500px;
+      .devicon {
+        font-size: 3rem;
+      }
     }
   }
 }
 
-#skills {
-  .devicon {
-    font-size: 3rem;
-  }
+#experience {
+
 }
 
 #projects {
@@ -137,13 +141,12 @@ header {
   .about-section {
     flex-direction: column;
     display: flex;
-    flex: wrap;
     .about-image-div {
       justify-content: center;
       display: flex;
     }
-    .about-paragraph {
-      // width: 300px;
+    .icons {
+      text-align : center;
     }
   }
 }
