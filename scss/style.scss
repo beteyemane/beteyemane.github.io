@@ -45,8 +45,12 @@ header {
           .nav-icons {
             width: 50%;
           }
-          .nav-icons:hover {
+          .nav-icons:hover:after {
             cursor: pointer;
+            content: 'HOME';
+          }
+          .nav-icons::before {
+            content: url('./assets/home2.png')
           }
         }
       }
@@ -54,6 +58,19 @@ header {
     .right-bar {
       width: 46.86px;
     }
+  }
+}
+
+#about, #skills, #projects, #contact {
+  height: 100vh;
+  padding-top: 60px;
+  h1, p{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+  }
+  h1 {
+    text-transform: uppercase;
   }
 }
 
@@ -82,27 +99,51 @@ header {
   }
 }
 
-//========PROFILE=======//
+//========ABOUT=======//
 //
-#about {
-  height: 100vh;
-  .bete {
 
+#about {
+  .about-section{
+    justify-content: space-around;
+    display: flex;
+    .bete {
+      border-radius: 50%;
+      height: 200px;
+    }
+    .about-paragraph {
+      max-width: 500px;
+    }
   }
 }
 
 #skills {
-  height: 100vh;
+  .devicon {
+    font-size: 3rem;
+  }
 }
 
 #projects {
-  height: 100vh;
+
 }
 
 #contact {
-  height: 100vh;
+
 }
 
 @media only screen and (max-width: 600px) {
-
+  // .nav-icons {
+  //   display: none;
+  // }
+  .about-section {
+    flex-direction: column;
+    display: flex;
+    flex: wrap;
+    .about-image-div {
+      justify-content: center;
+      display: flex;
+    }
+    .about-paragraph {
+      // width: 300px;
+    }
+  }
 }

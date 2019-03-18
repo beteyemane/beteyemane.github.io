@@ -34,10 +34,23 @@ header {
           list-style: none; }
           header .container nav ul li .nav-icons {
             width: 50%; }
-          header .container nav ul li .nav-icons:hover {
-            cursor: pointer; }
+          header .container nav ul li .nav-icons:hover:after {
+            cursor: pointer;
+            content: 'HOME'; }
+          header .container nav ul li .nav-icons::before {
+            content: url("./assets/home2.png"); }
     header .container .right-bar {
       width: 46.86px; }
+
+#about, #skills, #projects, #contact {
+  height: 100vh;
+  padding-top: 60px; }
+  #about h1, #about p, #skills h1, #skills p, #projects h1, #projects p, #contact h1, #contact p {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-weight: 100; }
+  #about h1, #skills h1, #projects h1, #contact h1 {
+    text-transform: uppercase; }
 
 #home {
   letter-spacing: 0.1rem;
@@ -57,16 +70,25 @@ header {
   #home .break {
     width: 500px; }
 
-#about {
-  height: 100vh; }
+#about .about-section {
+  justify-content: space-around;
+  display: flex; }
+  #about .about-section .bete {
+    border-radius: 50%;
+    height: 200px; }
+  #about .about-section .about-paragraph {
+    max-width: 500px; }
 
-#skills {
-  height: 100vh; }
+#skills .devicon {
+  font-size: 3rem; }
 
-#projects {
-  height: 100vh; }
-
-#contact {
-  height: 100vh; }
+@media only screen and (max-width: 600px) {
+  .about-section {
+    flex-direction: column;
+    display: flex;
+    flex: wrap; }
+    .about-section .about-image-div {
+      justify-content: center;
+      display: flex; } }
 
 /*# sourceMappingURL=style.css.map */
