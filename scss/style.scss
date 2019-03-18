@@ -1,23 +1,29 @@
-$main-grey: #1b1b1c;
+$black: #000;
 $bright-purple: #CBA0F3;
-$white: white;
+$white: #fff;
 
 *{
   box-sizing: border-box;
-  font-family: "Helvetica";
 }
+
+html {
+  scroll-behavior: smooth;
+ }
 
 body {
   margin: 0;
-  background-color: $main-grey;
+  font-family: "Helvetica";
 }
 
 //========NAVBAR==========//
 
 header {
-  background-color:$main-grey;
+  background-color:$black;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
   a.logo {
-    color: $bright-purple;
+    color: $white;
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -51,27 +57,50 @@ header {
   }
 }
 
-.hero {
-  color: $bright-purple;
+//=========HOME=========//
+
+#home {
   letter-spacing: 0.1rem;
   font-weight: 100;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
   h1 {
     font-size: 75px;
     margin: 0;
+    font-family: 'Lobster', cursive;
   }
-  h1, h2 {
+  h1, h2, p {
     font-weight: 100;
     letter-spacing: 0.8rem;
   }
   .break {
     width: 500px;
   }
+}
+
+//========PROFILE=======//
+//
+#about {
+  height: 100vh;
+  .bete {
+
+  }
+}
+
+#skills {
+  height: 100vh;
+}
+
+#projects {
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
 }
 
 @media only screen and (max-width: 600px) {
