@@ -39,8 +39,6 @@ header {
             content: 'HOME'; }
           header .container nav ul li .nav-icons::before {
             content: url("./assets/home2.png"); }
-    header .container .right-bar {
-      width: 46.86px; }
 
 #about, #experience, #projects, #contact {
   min-height: 100vh;
@@ -97,6 +95,28 @@ header {
     height: 75px; }
 
 @media only screen and (max-width: 600px) {
+  .burger {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; }
+    .burger .bar1, .burger .bar2, .burger .bar3 {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 2px;
+      transition: 0.4s; }
+
+  .burger:hover {
+    cursor: pointer; }
+
+  .container {
+    height: 62px; }
+    .container nav {
+      display: none;
+      width: 65% !important;
+      text-align: center; }
+
   .about-section {
     flex-direction: column;
     display: flex; }
