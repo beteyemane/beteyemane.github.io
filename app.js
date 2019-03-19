@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
   const navbar = document.querySelector('#nav-links')
   const burger = document.querySelector('.burger')
 

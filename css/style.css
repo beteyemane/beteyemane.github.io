@@ -42,7 +42,7 @@ header {
 
 #about, #experience, #projects, #contact {
   min-height: 100vh;
-  padding-top: 60px; }
+  padding: 60px 30px 0 30px; }
   #about h1, #about p, #experience h1, #experience p, #projects h1, #projects p, #contact h1, #contact p {
     letter-spacing: 0.1rem;
     font-weight: 100; }
@@ -94,6 +94,17 @@ header {
   #experience .experience-section .logos {
     height: 75px; }
 
+#projects .project-section div {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px 30px 30px; }
+  #projects .project-section div img {
+    height: 300px; }
+  #projects .project-section div p {
+    max-width: 500px;
+    padding: 0 20px 20px 20px;
+    margin: 0; }
+
 @media only screen and (max-width: 600px) {
   .burger {
     justify-content: center;
@@ -128,6 +139,18 @@ header {
 
   .experience-section {
     flex-direction: column;
-    display: flex; } }
+    display: flex; }
+
+  .project-section div {
+    flex-direction: column;
+    display: flex; }
+    .project-section div img {
+      max-height: 200px; } }
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .project-section div {
+    flex-direction: column;
+    display: flex; }
+    .project-section div img {
+      max-height: 200px; } }
 
 /*# sourceMappingURL=style.css.map */

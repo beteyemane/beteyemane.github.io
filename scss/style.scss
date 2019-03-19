@@ -63,7 +63,7 @@ header {
 
 #about, #experience, #projects, #contact {
   min-height: 100vh;
-  padding-top: 60px;
+  padding: 60px 30px 0 30px;
   h1, p {
     letter-spacing: 0.1rem;
     font-weight: 100;
@@ -144,7 +144,21 @@ header {
 }
 
 #projects {
-
+  .project-section {
+    div {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 30px 30px 30px;
+      img {
+        height: 300px;
+      }
+      p {
+        max-width: 500px;
+        padding: 0 20px 20px 20px;
+        margin: 0;
+      }
+    }
+  }
 }
 
 #contact {
@@ -190,5 +204,26 @@ header {
   .experience-section {
     flex-direction: column;
     display: flex;
+  }
+  .project-section {
+    div {
+      flex-direction: column;
+      display: flex;
+      img {
+        max-height: 200px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation : landscape) {
+  .project-section {
+    div {
+      flex-direction: column;
+      display: flex;
+      img {
+        max-height: 200px;
+      }
+    }
   }
 }
