@@ -62,16 +62,19 @@ header {
 }
 
 #about, #experience, #projects, #contact {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 60px;
-  h1, p{
-    text-align: center;
+  h1, p {
     letter-spacing: 0.1rem;
     font-weight: 100;
   }
   h1 {
+    text-align: center;
     text-transform: uppercase;
   }
+  // p {
+  //   text-align: justify;
+  // }
 }
 
 //=========HOME=========//
@@ -123,7 +126,21 @@ header {
 }
 
 #experience {
-
+  .experience-section {
+    justify-content: center;
+    display: flex;
+    padding: 0 30px 30px 30px;
+    div {
+      min-width: 33%;
+      .logo-div {
+        justify-content: center;
+        display: flex;
+      }
+    }
+    .logos {
+      height: 75px;
+    }
+  }
 }
 
 #projects {
@@ -135,9 +152,6 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-  // .nav-icons {
-  //   display: none;
-  // }
   .about-section {
     flex-direction: column;
     display: flex;
@@ -148,5 +162,10 @@ header {
     .icons {
       text-align : center;
     }
+  }
+
+  .experience-section {
+    flex-direction: column;
+    display: flex;
   }
 }
