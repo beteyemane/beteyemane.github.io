@@ -33,6 +33,7 @@ header {
   .container {
     justify-content: space-between;
     display: flex;
+    min-height: 62px;
     nav {
       width: 40%;
       ul {
@@ -166,6 +167,16 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+  .container {
+    min-height: 62px;
+    nav {
+      display: none;
+      width: 65% !important;
+      text-align: center;
+      ul {
+        display: inline-table !important;
+      }
+    }
   .burger {
     justify-content: center;
     display: flex;
@@ -179,15 +190,8 @@ header {
       transition: 0.4s;
     }
   }
-  .burger:hover {
-    cursor: pointer;
-  }
-  .container {
-    height: 62px;
-    nav {
-      display: none;
-      width: 65% !important;
-      text-align: center;
+    .burger:hover {
+      cursor: pointer;
     }
   }
   .about-section {

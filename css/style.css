@@ -22,7 +22,8 @@ header {
     font-weight: 300; }
   header .container {
     justify-content: space-between;
-    display: flex; }
+    display: flex;
+    min-height: 62px; }
     header .container nav {
       width: 40%; }
       header .container nav ul {
@@ -106,27 +107,27 @@ header {
     margin: 0; }
 
 @media only screen and (max-width: 600px) {
-  .burger {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px; }
-    .burger .bar1, .burger .bar2, .burger .bar3 {
-      width: 25px;
-      height: 3px;
-      background-color: #fff;
-      margin: 2px;
-      transition: 0.4s; }
-
-  .burger:hover {
-    cursor: pointer; }
-
   .container {
-    height: 62px; }
+    min-height: 62px; }
     .container nav {
       display: none;
       width: 65% !important;
       text-align: center; }
+      .container nav ul {
+        display: inline-table !important; }
+    .container .burger {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px; }
+      .container .burger .bar1, .container .burger .bar2, .container .burger .bar3 {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 2px;
+        transition: 0.4s; }
+    .container .burger:hover {
+      cursor: pointer; }
 
   .about-section {
     flex-direction: column;
