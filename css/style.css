@@ -40,9 +40,11 @@ header {
     header .container .right-bar {
       width: 46.86px; }
 
-#about, #experience, #projects, #contact {
-  min-height: 100vh;
+#experience, #projects, #contact {
   padding: 60px 30px 0 30px; }
+
+#about, #experience, #projects, #contact {
+  min-height: 100vh; }
   #about h1, #about p, #experience h1, #experience p, #projects h1, #projects p, #contact h1, #contact p {
     letter-spacing: 0.1rem;
     font-weight: 100; }
@@ -73,7 +75,7 @@ header {
       border: 1px solid #fff;
       height: 200px;
       min-width: 50%;
-      margin-top: 100px;
+      margin-top: 50%;
       padding: 60px; }
       #home div .border h1 {
         font-size: 30px;
@@ -99,10 +101,13 @@ header {
     border-radius: 50%;
     height: 200px; }
   #about .about-section .about-paragraph {
-    max-width: 603px;
-    padding: 0 20px 20px 20px;
+    max-width: 620px;
+    padding: 40px 20px 20px 20px;
     border-right: 1px solid #3e2f51;
-    height: 100vh; }
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; }
     #about .about-section .about-paragraph h1 {
       font-size: 30px;
       font-weight: 400;
