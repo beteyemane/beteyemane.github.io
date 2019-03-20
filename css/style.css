@@ -9,7 +9,7 @@ body {
   font-family: "Helvetica"; }
 
 header {
-  background-color: #000;
+  background-color: #3e2f51;
   overflow: hidden;
   position: fixed;
   width: 100%; }
@@ -25,7 +25,8 @@ header {
     display: flex;
     min-height: 62px; }
     header .container nav {
-      width: 40%; }
+      width: 40%;
+      text-align: center; }
       header .container nav ul {
         padding: 0;
         display: flex;
@@ -35,6 +36,8 @@ header {
           list-style: none; }
           header .container nav ul li .nav-icons {
             width: 50%; }
+    header .container .right-bar {
+      width: 46.86px; }
 
 #about, #experience, #projects, #contact {
   min-height: 100vh;
@@ -48,21 +51,42 @@ header {
 
 #home {
   letter-spacing: 0.1rem;
-  font-weight: 100;
+  font-weight: 500;
   text-align: center;
+  text-transform: uppercase;
   justify-content: center;
   display: flex;
-  flex-direction: column;
-  height: 100vh; }
-  #home h1 {
-    font-size: 75px;
-    margin: 0;
-    font-family: 'Lobster', cursive; }
-  #home h1, #home h2, #home p {
-    font-weight: 100;
-    letter-spacing: 0.8rem; }
-  #home .break {
-    width: 500px; }
+  height: 100vh;
+  color: #fff;
+  background-color: #3e2f51; }
+  #home div {
+    flex-direction: column;
+    display: flex;
+    justify-content: center; }
+    #home div .border {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border: 1px solid #fff;
+      height: 200px;
+      min-width: 50%;
+      margin-top: 100px;
+      padding: 60px; }
+      #home div .border h1 {
+        font-size: 30px;
+        margin: 0;
+        font-weight: 400; }
+      #home div .border h1, #home div .border h2, #home div .border p {
+        letter-spacing: 0.5rem; }
+      #home div .border h2 {
+        font-weight: 100;
+        font-size: 15px; }
+      #home div .border .break {
+        width: 400px; }
+    #home div .line {
+      border-right: 1px solid #fff;
+      height: 500px;
+      margin-right: 50%; }
 
 #about .about-section {
   justify-content: space-around;
