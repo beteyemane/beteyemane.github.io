@@ -35,11 +35,6 @@ header {
           list-style: none; }
           header .container nav ul li .nav-icons {
             width: 50%; }
-          header .container nav ul li .nav-icons:hover:after {
-            cursor: pointer;
-            content: 'HOME'; }
-          header .container nav ul li .nav-icons::before {
-            content: url("./assets/home2.png"); }
 
 #about, #experience, #projects, #contact {
   min-height: 100vh;
@@ -100,7 +95,8 @@ header {
   justify-content: space-around;
   padding: 0 30px 30px 30px; }
   #projects .project-section div img {
-    height: 300px; }
+    height: 300px;
+    object-fit: cover; }
   #projects .project-section div p {
     max-width: 500px;
     padding: 0 20px 20px 20px;

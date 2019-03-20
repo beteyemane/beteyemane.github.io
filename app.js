@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('#nav-links')
   const burger = document.querySelector('.burger')
 
-  function click() {
+  function navbarClick() {
     if(navbar.style.display === 'block') {
       navbar.style.display = 'none'
     } else {
@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  burger.addEventListener('click', click)
+  burger.addEventListener('click', navbarClick)
 
 })

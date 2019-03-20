@@ -46,13 +46,18 @@ header {
           .nav-icons {
             width: 50%;
           }
-          .nav-icons:hover:after {
-            cursor: pointer;
-            content: 'HOME';
-          }
-          .nav-icons::before {
-            content: url('./assets/home2.png')
-          }
+          // a:before {
+          //   content: "";
+          //   background: url("icon-external.jpg") no-repeat top right;
+          // }
+          // a:hover:after {
+          //   cursor: pointer;
+          //   content: 'HOME';
+          //   text-decoration: none;
+          // }
+          // a:active {
+          //   background-color: $bright-purple;
+          // }
         }
       }
     }
@@ -152,6 +157,7 @@ header {
       padding: 0 30px 30px 30px;
       img {
         height: 300px;
+        object-fit: cover;
       }
       p {
         max-width: 500px;
@@ -167,6 +173,9 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+  #home {
+    // padding-top: 70px;
+  }
   .container {
     min-height: 62px;
     nav {
