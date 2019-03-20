@@ -77,10 +77,10 @@ header {
 #about, #experience, #projects, #contact {
   min-height: 100vh;
   h1, p {
-    letter-spacing: 0.1rem;
     font-weight: 100;
   }
   h1 {
+    letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase;
   }
@@ -151,7 +151,7 @@ header {
     }
     .about-paragraph {
       max-width: 620px;
-      padding: 40px 20px 20px 20px;
+      padding: 0px 20px 20px 20px;
       border-right: 1px solid $main-purple;
       height: 100vh;
       justify-content: center;
@@ -165,10 +165,14 @@ header {
         max-width: 200px;
       }
     }
-    .icons {
-      max-width: 500px;
-      .devicon {
-        font-size: 3rem;
+    .icons-container {
+      align-items: center;
+      display: flex;
+      .icons {
+        max-width: 500px;
+        .devicon {
+          font-size: 3rem;
+        }
       }
     }
   }
@@ -231,6 +235,7 @@ header {
       text-align: center;
       ul {
         display: inline-table !important;
+        margin-right: 0 !important;
       }
     }
   .burger {
@@ -253,6 +258,7 @@ header {
   .about-section {
     flex-direction: column;
     display: flex;
+    padding-top: 20px;
     .about-image-div {
       justify-content: center;
       display: flex;

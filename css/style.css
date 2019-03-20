@@ -46,9 +46,9 @@ header {
 #about, #experience, #projects, #contact {
   min-height: 100vh; }
   #about h1, #about p, #experience h1, #experience p, #projects h1, #projects p, #contact h1, #contact p {
-    letter-spacing: 0.1rem;
     font-weight: 100; }
   #about h1, #experience h1, #projects h1, #contact h1 {
+    letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase; }
   #about p, #experience p, #projects p, #contact p {
@@ -102,7 +102,7 @@ header {
     height: 200px; }
   #about .about-section .about-paragraph {
     max-width: 620px;
-    padding: 40px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
     border-right: 1px solid #3e2f51;
     height: 100vh;
     justify-content: center;
@@ -114,10 +114,13 @@ header {
       border: 3px solid #3e2f51;
       padding: 20px;
       max-width: 200px; }
-  #about .about-section .icons {
-    max-width: 500px; }
-    #about .about-section .icons .devicon {
-      font-size: 3rem; }
+  #about .about-section .icons-container {
+    align-items: center;
+    display: flex; }
+    #about .about-section .icons-container .icons {
+      max-width: 500px; }
+      #about .about-section .icons-container .icons .devicon {
+        font-size: 3rem; }
 
 #experience .experience-section {
   justify-content: center;
@@ -151,7 +154,8 @@ header {
       width: 65% !important;
       text-align: center; }
       .container nav ul {
-        display: inline-table !important; }
+        display: inline-table !important;
+        margin-right: 0 !important; }
     .container .burger {
       justify-content: center;
       display: flex;
@@ -168,7 +172,8 @@ header {
 
   .about-section {
     flex-direction: column;
-    display: flex; }
+    display: flex;
+    padding-top: 20px; }
     .about-section .about-image-div {
       justify-content: center;
       display: flex; }
