@@ -8,6 +8,9 @@ body {
   margin: 0;
   font-family: "Helvetica"; }
 
+main {
+  scroll-snap-type: mandatory; }
+
 header {
   background-color: #3e2f51;
   overflow: hidden;
@@ -101,7 +104,7 @@ header {
     border-radius: 50%;
     height: 200px; }
   #about .about-section .about-paragraph {
-    max-width: 620px;
+    max-width: 700px;
     padding: 0px 20px 20px 20px;
     border-right: 1px solid #3e2f51;
     height: 100vh;
