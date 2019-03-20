@@ -25,13 +25,14 @@ header {
     display: flex;
     min-height: 62px; }
     header .container nav {
-      width: 40%;
+      min-width: 40%;
       text-align: center; }
       header .container nav ul {
         padding: 0;
         display: flex;
         flex-direction: row;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin-right: 46.86px; }
         header .container nav ul li {
           list-style: none; }
           header .container nav ul li .nav-icons {
@@ -90,13 +91,21 @@ header {
 
 #about .about-section {
   justify-content: space-around;
-  display: flex; }
+  display: flex;
+  color: #3e2f51; }
   #about .about-section .bete {
     border-radius: 50%;
     height: 200px; }
   #about .about-section .about-paragraph {
     max-width: 500px;
-    padding: 0 20px 20px 20px; }
+    padding: 0 20px 20px 20px;
+    border-right: 1px solid #3e2f51; }
+    #about .about-section .about-paragraph h1 {
+      font-size: 30px;
+      font-weight: 400;
+      border: 3px solid #3e2f51;
+      padding: 20px;
+      max-width: 200px; }
   #about .about-section .icons {
     max-width: 500px; }
     #about .about-section .icons .devicon {

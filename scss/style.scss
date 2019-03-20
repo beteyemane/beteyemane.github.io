@@ -36,13 +36,14 @@ header {
     display: flex;
     min-height: 62px;
     nav {
-      width: 40%;
+      min-width: 40%;
       text-align: center;
       ul {
         padding: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-right: 46.86px;
         li {
           list-style: none;
           .nav-icons {
@@ -140,13 +141,22 @@ header {
   .about-section{
     justify-content: space-around;
     display: flex;
+    color: $main-purple;
     .bete {
       border-radius: 50%;
       height: 200px;
     }
     .about-paragraph {
+      h1 {
+        font-size: 30px;
+        font-weight: 400;
+        border: 3px solid $main-purple;
+        padding: 20px;
+        max-width: 200px;
+      }
       max-width: 500px;
       padding: 0 20px 20px 20px;
+      border-right: 1px solid $main-purple;
     }
     .icons {
       max-width: 500px;
