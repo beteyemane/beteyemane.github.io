@@ -49,6 +49,8 @@ header {
   #about h1, #experience h1, #projects h1, #contact h1 {
     text-align: center;
     text-transform: uppercase; }
+  #about p, #experience p, #projects p, #contact p {
+    text-align: justify; }
 
 #home {
   letter-spacing: 0.1rem;
@@ -97,9 +99,10 @@ header {
     border-radius: 50%;
     height: 200px; }
   #about .about-section .about-paragraph {
-    max-width: 500px;
+    max-width: 603px;
     padding: 0 20px 20px 20px;
-    border-right: 1px solid #3e2f51; }
+    border-right: 1px solid #3e2f51;
+    height: 100vh; }
     #about .about-section .about-paragraph h1 {
       font-size: 30px;
       font-weight: 400;
@@ -164,6 +167,8 @@ header {
     .about-section .about-image-div {
       justify-content: center;
       display: flex; }
+    .about-section .about-paragraph {
+      border: none !important; }
     .about-section .icons {
       text-align: center; }
 
