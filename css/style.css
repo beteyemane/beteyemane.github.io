@@ -38,6 +38,15 @@ header {
         margin-right: 46.86px; }
         header .container nav ul li {
           list-style: none; }
+          header .container nav ul li .nav-text {
+            display: none;
+            margin: 0;
+            text-decoration: none;
+            color: #FFF;
+            letter-spacing: 0.1rem;
+            font-weight: 100;
+            animation: fadein 0.5s;
+            font-size: 10px; }
           header .container nav ul li .nav-icons {
             width: 50%; }
     header .container .right-bar {
@@ -132,35 +141,45 @@ header {
       border: 3px solid #393344;
       padding: 20px;
       max-width: 200px; }
-  #about .about-section .icons-container {
-    align-items: center;
+  #about .about-section .skills-container {
+    align-items: flex-end;
+    justify-content: flex-end;
     display: flex;
     color: #393344;
     background-color: #1C1C1C;
     min-width: 50%; }
-    #about .about-section .icons-container p {
+    #about .about-section .skills-container p {
       margin: 0; }
-    #about .about-section .icons-container .wrapper {
+    #about .about-section .skills-container .wrapper {
       transform: translate(20%, -2%); }
-    #about .about-section .icons-container .text {
+    #about .about-section .skills-container .skills-arrow {
+      border-bottom: 2px solid #393344;
+      border-right: 2px solid #393344;
+      height: 20px;
+      width: 20px;
+      transform: rotate(-45deg);
+      margin: 60px; }
+    #about .about-section .skills-container .skills-arrow:hover {
+      cursor: pointer; }
+    #about .about-section .skills-container .text {
       margin: 0;
       font-size: 60px;
       text-align: left;
       text-transform: uppercase;
       font-weight: 800;
       text-align: center; }
-      #about .about-section .icons-container .text .line {
+      #about .about-section .skills-container .text .line {
         overflow: hidden;
         white-space: nowrap;
         height: 70px;
         line-height: .9; }
-        #about .about-section .icons-container .text .line:first-child + .line {
+        #about .about-section .skills-container .text .line:first-child + .line {
           margin-left: 75px; }
-          #about .about-section .icons-container .text .line:first-child + .line + .line {
+          #about .about-section .skills-container .text .line:first-child + .line + .line {
             margin-left: 150px; }
-          #about .about-section .icons-container .text .line:first-child + .line + .line {
+          #about .about-section .skills-container .text .line:first-child + .line + .line {
             margin-left: 150px; }
-        #about .about-section .icons-container .text .line > p {
+        #about .about-section .skills-container .text .line > p {
           margin: 0;
           height: 70px;
           overflow: hidden;
@@ -168,13 +187,26 @@ header {
           line-height: .9;
           white-space: nowrap;
           animation: moveWords 20s infinite ease; }
-      #about .about-section .icons-container .text .line:nth-child(odd) {
+      #about .about-section .skills-container .text .line:nth-child(odd) {
         transform: skew(60deg, -30deg) scaleY(0.66667); }
-      #about .about-section .icons-container .text .line:nth-child(even) {
+      #about .about-section .skills-container .text .line:nth-child(even) {
         transform: skew(0deg, -30deg) scaleY(1.33333); }
-    #about .about-section .icons-container .icons {
-      max-width: 500px;
-      font-size: 3rem; }
+  #about .about-section .icons-container {
+    display: none;
+    color: #393344;
+    background-color: #1C1C1C;
+    min-width: 50%;
+    align-items: flex-end;
+    justify-content: flex-end; }
+    #about .about-section .icons-container .icons-arrow {
+      border-bottom: 2px solid #393344;
+      border-right: 2px solid #393344;
+      height: 20px;
+      width: 20px;
+      transform: rotate(-45deg);
+      margin: 60px; }
+    #about .about-section .icons-container .icons-arrow:hover {
+      cursor: pointer; }
 
 #experience .experience-section {
   justify-content: center;

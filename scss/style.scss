@@ -51,6 +51,16 @@ header {
         margin-right: 46.86px;
         li {
           list-style: none;
+          .nav-text {
+            display: none;
+            margin: 0;
+            text-decoration: none;
+            color: $white;
+            letter-spacing: 0.1rem;
+            font-weight: 100;
+            animation: fadein 0.5s;
+            font-size: 10px;
+          }
           .nav-icons {
             width: 50%;
           }
@@ -191,8 +201,9 @@ header {
         max-width: 200px;
       }
     }
-    .icons-container {
-      align-items: center;
+    .skills-container {
+      align-items: flex-end;
+      justify-content: flex-end;
       display: flex;
       color: $main-purple;
       background-color: $main-grey;
@@ -202,6 +213,17 @@ header {
       }
       .wrapper {
         transform: translate(20%, -2%);
+        }
+        .skills-arrow {
+          border-bottom: 2px solid $main-purple;
+          border-right: 2px solid $main-purple;
+          height: 20px;
+          width: 20px;
+          transform: rotate(-45deg);
+          margin: 60px;
+        }
+        .skills-arrow:hover {
+          cursor: pointer;
         }
         .text {
         	margin: 0;
@@ -243,13 +265,24 @@ header {
         		transform: skew(0deg,-30deg) scaleY(1.33333);
         	}
         }
-      .icons {
-        max-width: 500px;
-        // animation: float 4s ease-in-out infinite;
-        // transform: translatey(0px);
-        font-size: 3rem;
-        .devicon {
-        }
+    }
+    .icons-container {
+      display: none;
+      color: $main-purple;
+      background-color: $main-grey;
+      min-width: 50%;
+      align-items: flex-end;
+      justify-content: flex-end;
+      .icons-arrow {
+        border-bottom: 2px solid $main-purple;
+        border-right: 2px solid $main-purple;
+        height: 20px;
+        width: 20px;
+        transform: rotate(-45deg);
+        margin: 60px;
+      }
+      .icons-arrow:hover {
+        cursor: pointer;
       }
     }
   }

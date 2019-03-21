@@ -4,6 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger')
   const name = document.querySelector('.name')
   const arrow = document.querySelector('.arrow')
+  const skillsArrow = document.querySelector('.skills-arrow')
+  const iconsArrow = document.querySelector('.icons-arrow')
+  const skillsContainer = document.querySelector('.skills-container')
+  const iconsContainer = document.querySelector('.icons-container')
+
+  console.log(skillsArrow, iconsContainer, skillsContainer)
+
+  //icons
+  // const navIcons = document.querySelector('.nav-icons')
+  // const navText = document.querySelector('.nav-text')
+
   const text = 'BETE YEMANE'
   let i  = 0
   const speed = 200
@@ -26,8 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
       arrow.style.display = 'block'
   }
 
+  function skills() {
+    if(iconsContainer.style.display === 'flex') {
+      iconsContainer.style.display = 'none'
+      skillsContainer.style.display = 'flex'
+    } else {
+      iconsContainer.style.display = 'flex'
+      skillsContainer.style.display = 'none'
+    }
+  }
+
   typewriter()
 
   burger.addEventListener('click', navbarClick)
-
+  skillsArrow.addEventListener('click', skills)
+  iconsArrow.addEventListener('click', skills)
 })
