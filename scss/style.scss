@@ -269,8 +269,8 @@ header {
     }
     .icons-container {
       display: none;
-      color: $main-grey;
-      background-color: $main-purple;
+      color: $main-purple;
+      background-color: $main-grey;
       min-width: 50%;
       max-width: 50%;
       align-items: flex-end;
@@ -283,9 +283,13 @@ header {
         letter-spacing: 0.1rem;
         margin-right: 15%;
       }
+      p:hover {
+        transform: scale(1.5);
+        cursor: pointer;
+      }
       .icons-arrow {
-        border-bottom: 5px solid $main-grey;
-        border-right: 5px solid $main-grey;
+        border-bottom: 5px solid $main-purple;
+        border-right: 5px solid $main-purple;
         height: 20px;
         width: 20px;
         transform: rotate(-45deg);
