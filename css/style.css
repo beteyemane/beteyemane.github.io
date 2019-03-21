@@ -196,8 +196,15 @@ header {
     color: #1C1C1C;
     background-color: #393344;
     min-width: 50%;
+    max-width: 50%;
     align-items: flex-end;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    text-align: center; }
+    #about .about-section .icons-container .icons {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.1rem; }
     #about .about-section .icons-container .icons-arrow {
       border-bottom: 5px solid #1C1C1C;
       border-right: 5px solid #1C1C1C;

@@ -1,6 +1,7 @@
 $black: #000;
 $bright-purple: #CBA0F3;
 $main-purple: #393344;
+$dark-purple: #2b2635;
 $main-grey: #1C1C1C;
 $white: #FFF;
 
@@ -271,8 +272,16 @@ header {
       color: $main-grey;
       background-color: $main-purple;
       min-width: 50%;
+      max-width: 50%;
       align-items: flex-end;
       justify-content: flex-end;
+      text-align: center;
+      .icons {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.1rem;
+      }
       .icons-arrow {
         border-bottom: 5px solid $main-grey;
         border-right: 5px solid $main-grey;
