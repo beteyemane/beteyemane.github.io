@@ -27,6 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   burger.addEventListener('click', navbarClick)
 
-
-
 })

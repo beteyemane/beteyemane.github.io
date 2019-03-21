@@ -115,14 +115,8 @@ header {
     display: flex;
     justify-content: center;
     .border {
-      // display: flex;
-      // justify-content: center;
-      // flex-direction: column;
-      // // border: 1px solid $white;
-      // height: 200px;
-      // min-width: 50%;
       margin-top: 50%;
-      padding: 60px;
+      padding: 60px 60px 20px 60px;
       h1 {
         font-size: 30px;
         margin: 0;
@@ -138,6 +132,14 @@ header {
       .break {
         width: 400px;
       }
+    }
+    .arrow {
+      min-height: 20px;
+      border-bottom: 1px solid $white;
+      border-right: 1px solid $white;
+      width: 20px;
+      transform: rotate(45deg);
+      margin-left: 47.5%;
     }
     .line {
       border-right: 1px solid $white;

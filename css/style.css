@@ -78,7 +78,7 @@ header {
     justify-content: center; }
     #home div .border {
       margin-top: 50%;
-      padding: 60px; }
+      padding: 60px 60px 20px 60px; }
       #home div .border h1 {
         font-size: 30px;
         margin: 0;
@@ -90,6 +90,13 @@ header {
         font-size: 15px; }
       #home div .border .break {
         width: 400px; }
+    #home div .arrow {
+      min-height: 20px;
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid #fff;
+      width: 20px;
+      transform: rotate(45deg);
+      margin-left: 47.5%; }
     #home div .line {
       border-right: 1px solid #fff;
       height: 500px;
