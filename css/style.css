@@ -204,7 +204,8 @@ header {
       font-size: 1rem;
       text-transform: uppercase;
       font-weight: 800;
-      letter-spacing: 0.1rem; }
+      letter-spacing: 0.1rem;
+      margin-right: 15%; }
     #about .about-section .icons-container .icons-arrow {
       border-bottom: 5px solid #1C1C1C;
       border-right: 5px solid #1C1C1C;
