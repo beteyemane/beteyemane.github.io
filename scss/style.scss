@@ -97,6 +97,9 @@ header {
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+    // 0%   {border-color: $white}
+    // 50%   {border-color: $bright-purple}
+    // 100%   {border-color: $white}
 }
 
 #home {
