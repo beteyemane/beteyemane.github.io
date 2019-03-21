@@ -1,6 +1,6 @@
 $black: #000;
 $bright-purple: #CBA0F3;
-$main-purple: #3e2f51;
+$main-purple: #393344;
 $white: #fff;
 
 *{
@@ -94,6 +94,10 @@ header {
 }
 
 //=========HOME=========//
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
 #home {
   letter-spacing: 0.1rem;
@@ -111,12 +115,12 @@ header {
     display: flex;
     justify-content: center;
     .border {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      border: 1px solid $white;
-      height: 200px;
-      min-width: 50%;
+      // display: flex;
+      // justify-content: center;
+      // flex-direction: column;
+      // // border: 1px solid $white;
+      // height: 200px;
+      // min-width: 50%;
       margin-top: 50%;
       padding: 60px;
       h1 {
@@ -143,6 +147,18 @@ header {
   }
 }
 //========ABOUT=======//
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 
 #about {
   .about-section{
@@ -174,8 +190,10 @@ header {
       display: flex;
       .icons {
         max-width: 500px;
+        // animation: float 4s ease-in-out infinite;
+        // transform: translatey(0px);
+        font-size: 3rem;
         .devicon {
-          font-size: 3rem;
         }
       }
     }
@@ -228,9 +246,9 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-  #home {
-    // padding-top: 70px;
-  }
+  // #home, #about {
+  //   padding-top: 40px;
+  // }
   .container {
     min-height: 62px;
     nav {
@@ -268,6 +286,7 @@ header {
       display: flex;
     }
     .about-paragraph {
+      padding-top: 70px !important;
       border: none !important;
     }
     .icons {
