@@ -17,7 +17,7 @@ header {
   position: fixed;
   width: 100%; }
   header a.logo {
-    color: #fff;
+    color: #FFF;
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -48,8 +48,6 @@ header {
 
 #about, #experience, #projects, #contact {
   min-height: 100vh; }
-  #about h1, #about p, #experience h1, #experience p, #projects h1, #projects p, #contact h1, #contact p {
-    font-weight: 100; }
   #about h1, #experience h1, #projects h1, #contact h1 {
     letter-spacing: 0.1rem;
     text-align: center;
@@ -70,7 +68,7 @@ header {
   justify-content: center;
   display: flex;
   height: 100vh;
-  color: #fff;
+  color: #FFF;
   background-color: #393344; }
   #home div {
     flex-direction: column;
@@ -92,26 +90,26 @@ header {
         width: 400px; }
     #home div .arrow {
       min-height: 20px;
-      border-bottom: 1px solid #fff;
-      border-right: 1px solid #fff;
+      border-bottom: 1px solid #FFF;
+      border-right: 1px solid #FFF;
       width: 20px;
       transform: rotate(45deg);
       margin-left: 47.5%;
       display: none;
       animation: fadein 2s; }
     #home div .line {
-      border-right: 1px solid #fff;
+      border-right: 1px solid #FFF;
       height: 500px;
       margin-right: 50%;
       margin-top: 15px; }
 
-@keyframes float {
+@keyframes moveWords {
   0% {
-    transform: translatey(0px); }
+    transform: translateY(0%); }
   50% {
-    transform: translatey(-20px); }
+    transform: translateY(-100%); }
   100% {
-    transform: translatey(0px); } }
+    transform: translateY(0%); } }
 #about .about-section {
   justify-content: space-around;
   display: flex;
@@ -126,7 +124,8 @@ header {
     height: 100vh;
     justify-content: center;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    font-weight: 100; }
     #about .about-section .about-paragraph h1 {
       font-size: 30px;
       font-weight: 400;
@@ -135,7 +134,44 @@ header {
       max-width: 200px; }
   #about .about-section .icons-container {
     align-items: center;
-    display: flex; }
+    display: flex;
+    color: #393344;
+    background-color: #1C1C1C;
+    min-width: 50%; }
+    #about .about-section .icons-container p {
+      margin: 0; }
+    #about .about-section .icons-container .wrapper {
+      transform: translate(20%, -2%); }
+    #about .about-section .icons-container .text {
+      margin: 0;
+      font-size: 60px;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: 800;
+      text-align: center; }
+      #about .about-section .icons-container .text .line {
+        overflow: hidden;
+        white-space: nowrap;
+        height: 70px;
+        line-height: .9; }
+        #about .about-section .icons-container .text .line:first-child + .line {
+          margin-left: 75px; }
+          #about .about-section .icons-container .text .line:first-child + .line + .line {
+            margin-left: 150px; }
+          #about .about-section .icons-container .text .line:first-child + .line + .line {
+            margin-left: 150px; }
+        #about .about-section .icons-container .text .line > p {
+          margin: 0;
+          height: 70px;
+          overflow: hidden;
+          font-size: 1em;
+          line-height: .9;
+          white-space: nowrap;
+          animation: moveWords 20s infinite ease; }
+      #about .about-section .icons-container .text .line:nth-child(odd) {
+        transform: skew(60deg, -30deg) scaleY(0.66667); }
+      #about .about-section .icons-container .text .line:nth-child(even) {
+        transform: skew(0deg, -30deg) scaleY(1.33333); }
     #about .about-section .icons-container .icons {
       max-width: 500px;
       font-size: 3rem; }
@@ -182,7 +218,7 @@ header {
       .container .burger .bar1, .container .burger .bar2, .container .burger .bar3 {
         width: 25px;
         height: 3px;
-        background-color: #fff;
+        background-color: #FFF;
         margin: 2px;
         transition: 0.4s; }
     .container .burger:hover {

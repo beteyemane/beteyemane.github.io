@@ -1,7 +1,8 @@
 $black: #000;
 $bright-purple: #CBA0F3;
 $main-purple: #393344;
-$white: #fff;
+$main-grey: #1C1C1C;
+$white: #FFF;
 
 *{
   box-sizing: border-box;
@@ -57,10 +58,9 @@ header {
           //   content: "";
           //   background: url("icon-external.jpg") no-repeat top right;
           // }
-          // a:hover:after {
-          //   cursor: pointer;
+          // img:hover {
+          //   display: none;
           //   content: 'HOME';
-          //   text-decoration: none;
           // }
           // a:active {
           //   background-color: $bright-purple;
@@ -80,9 +80,6 @@ header {
 
 #about, #experience, #projects, #contact {
   min-height: 100vh;
-  h1, p {
-    font-weight: 100;
-  }
   h1 {
     letter-spacing: 0.1rem;
     text-align: center;
@@ -156,15 +153,15 @@ header {
 }
 //========ABOUT=======//
 
-@keyframes float {
+@keyframes moveWords {
 	0% {
-		transform: translatey(0px);
+		transform: translateY(0%);
 	}
 	50% {
-		transform: translatey(-20px);
+		transform: translateY(-100%);
 	}
 	100% {
-		transform: translatey(0px);
+		transform: translateY(0%);
 	}
 }
 
@@ -185,6 +182,7 @@ header {
       justify-content: center;
       display: flex;
       flex-direction: column;
+      font-weight: 100;
       h1 {
         font-size: 30px;
         font-weight: 400;
@@ -196,6 +194,55 @@ header {
     .icons-container {
       align-items: center;
       display: flex;
+      color: $main-purple;
+      background-color: $main-grey;
+      min-width: 50%;
+      p {
+        margin: 0;
+      }
+      .wrapper {
+        transform: translate(20%, -2%);
+        }
+        .text {
+        	margin: 0;
+        	font-size: 60px;
+        	text-align: left;
+        	text-transform: uppercase;
+          font-weight: 800;
+        	text-align: center;
+        	.line {
+        		overflow: hidden;
+            white-space: nowrap;
+            height: 70px;
+        		line-height: .9;
+        		&:first-child {
+        			& + .line {
+        				margin-left: 75px;
+        				&+ .line {
+        					margin-left: 150px;
+        				}
+        					&+ .line {
+        					margin-left: 150px;
+        				}
+        			}
+        		}
+        		> p {
+        			margin: 0;
+        			height: 70px;
+        			overflow: hidden;
+        			font-size: 1em;
+        			line-height: .9;
+        			white-space: nowrap;
+        			animation: moveWords 20s infinite ease;
+        		}
+        	}
+        	.line:nth-child(odd) {
+        		transform: skew(60deg,-30deg) scaleY(.66667);
+        	}
+        	.line:nth-child(even) {
+        		transform: skew(0deg,-30deg) scaleY(1.33333);
+        	}
+        }
       .icons {
         max-width: 500px;
         // animation: float 4s ease-in-out infinite;
