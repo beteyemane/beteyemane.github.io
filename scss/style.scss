@@ -212,11 +212,11 @@ header {
         margin: 0;
       }
       .wrapper {
-        transform: translate(20%, -2%);
+        transform: translate(13%, -83%);
         }
         .skills-arrow {
-          border-bottom: 2px solid $main-purple;
-          border-right: 2px solid $main-purple;
+          border-bottom: 5px solid $main-purple;
+          border-right: 5px solid $main-purple;
           height: 20px;
           width: 20px;
           transform: rotate(-45deg);
@@ -268,14 +268,14 @@ header {
     }
     .icons-container {
       display: none;
-      color: $main-purple;
-      background-color: $main-grey;
+      color: $main-grey;
+      background-color: $main-purple;
       min-width: 50%;
       align-items: flex-end;
       justify-content: flex-end;
       .icons-arrow {
-        border-bottom: 2px solid $main-purple;
-        border-right: 2px solid $main-purple;
+        border-bottom: 5px solid $main-grey;
+        border-right: 5px solid $main-grey;
         height: 20px;
         width: 20px;
         transform: rotate(-45deg);

@@ -151,10 +151,10 @@ header {
     #about .about-section .skills-container p {
       margin: 0; }
     #about .about-section .skills-container .wrapper {
-      transform: translate(20%, -2%); }
+      transform: translate(13%, -83%); }
     #about .about-section .skills-container .skills-arrow {
-      border-bottom: 2px solid #393344;
-      border-right: 2px solid #393344;
+      border-bottom: 5px solid #393344;
+      border-right: 5px solid #393344;
       height: 20px;
       width: 20px;
       transform: rotate(-45deg);
@@ -193,14 +193,14 @@ header {
         transform: skew(0deg, -30deg) scaleY(1.33333); }
   #about .about-section .icons-container {
     display: none;
-    color: #393344;
-    background-color: #1C1C1C;
+    color: #1C1C1C;
+    background-color: #393344;
     min-width: 50%;
     align-items: flex-end;
     justify-content: flex-end; }
     #about .about-section .icons-container .icons-arrow {
-      border-bottom: 2px solid #393344;
-      border-right: 2px solid #393344;
+      border-bottom: 5px solid #1C1C1C;
+      border-right: 5px solid #1C1C1C;
       height: 20px;
       width: 20px;
       transform: rotate(-45deg);
