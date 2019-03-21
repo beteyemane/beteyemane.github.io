@@ -94,9 +94,9 @@ header {
 }
 
 //=========HOME=========//
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 #home {
@@ -140,11 +140,14 @@ header {
       width: 20px;
       transform: rotate(45deg);
       margin-left: 47.5%;
+      display: none;
+      animation: fadein 2s;
     }
     .line {
       border-right: 1px solid $white;
       height: 500px;
       margin-right: 50%;
+      margin-top: 15px;
     }
   }
 }

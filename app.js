@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('#nav-links')
   const burger = document.querySelector('.burger')
   const name = document.querySelector('.name')
+  const arrow = document.querySelector('.arrow')
   const text = 'BETE YEMANE'
   let i  = 0
   const speed = 200
@@ -21,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
       i++
       setTimeout(typewriter, speed)
     }
+    if (name.innerHTML.length === text.length)
+      arrow.style.display = 'block'
   }
 
   typewriter()
