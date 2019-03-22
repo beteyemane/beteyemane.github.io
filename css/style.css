@@ -258,28 +258,38 @@ header {
       height: 75px; }
 
 #projects {
-  font-weight: 100; }
+  font-weight: 100;
+  padding: 0; }
   #projects h1 {
     font-size: 30px;
     font-weight: 100;
     border: 1px solid #393344;
     padding: 20px;
+    margin: 40px;
     max-width: 200px; }
   #projects .project-section {
-    justify-content: space-around;
     display: flex;
     color: #393344; }
-    #projects .project-section .project-image {
+    #projects .project-section .project-paragraph {
+      justify-content: center;
+      height: 100vh;
+      width: 700px;
       display: flex;
-      justify-content: space-around;
-      padding: 0 30px 0px 0px; }
+      flex-direction: column; }
+      #projects .project-section .project-paragraph p {
+        align-items: center;
+        display: flex;
+        padding: 0 40px 40px 40px; }
+    #projects .project-section .project-image {
+      background-color: #1C1C1C;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 700px; }
       #projects .project-section .project-image img {
         height: 300px;
+        margin: 0;
         object-fit: cover; }
-      #projects .project-section .project-image p {
-        max-width: 500px;
-        padding: 0 20px 20px 20px;
-        margin: 0; }
 
 @media only screen and (max-width: 600px) {
   .container {
