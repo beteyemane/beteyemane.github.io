@@ -15,6 +15,7 @@ header {
   background-color: #393344;
   overflow: hidden;
   position: fixed;
+  z-index: 1;
   width: 100%; }
   header a.logo {
     color: #FFF;
@@ -206,6 +207,7 @@ header {
     text-align: center;
     position: relative; }
     #about .about-section .icons-container .icons {
+      animation: fadeinAbout 1s;
       font-size: 1rem;
       text-transform: uppercase;
       font-weight: 800;
@@ -255,17 +257,29 @@ header {
     #experience .experience-section .logos {
       height: 75px; }
 
-#projects .project-section div {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 30px 30px 30px; }
-  #projects .project-section div img {
-    height: 300px;
-    object-fit: cover; }
-  #projects .project-section div p {
-    max-width: 500px;
-    padding: 0 20px 20px 20px;
-    margin: 0; }
+#projects {
+  font-weight: 100; }
+  #projects h1 {
+    font-size: 30px;
+    font-weight: 100;
+    border: 1px solid #393344;
+    padding: 20px;
+    max-width: 200px; }
+  #projects .project-section {
+    justify-content: space-around;
+    display: flex;
+    color: #393344; }
+    #projects .project-section .project-image {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 30px 0px 0px; }
+      #projects .project-section .project-image img {
+        height: 300px;
+        object-fit: cover; }
+      #projects .project-section .project-image p {
+        max-width: 500px;
+        padding: 0 20px 20px 20px;
+        margin: 0; }
 
 @media only screen and (max-width: 600px) {
   .container {

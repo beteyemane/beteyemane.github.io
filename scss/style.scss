@@ -28,6 +28,7 @@ header {
   background-color:$main-purple;
   overflow: hidden;
   position: fixed;
+  z-index: 1;
   width: 100%;
   a.logo {
     color: $white;
@@ -190,7 +191,7 @@ header {
 // }
 
 #about {
-  .about-section{
+  .about-section {
     justify-content: space-around;
     display: flex;
     color: $main-purple;
@@ -291,7 +292,8 @@ header {
       text-align: center;
       position: relative;
       .icons {
-        // animation: fadeinAbout 1s;
+        // animation: mover 5s infinite;
+        animation: fadeinAbout 1s;
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: 800;
@@ -362,11 +364,22 @@ header {
 //===========PROJECTS===========//
 
 #projects {
+  font-weight: 100;
+  h1 {
+    font-size: 30px;
+    font-weight: 100;
+    border: 1px solid $main-purple;
+    padding: 20px;
+    max-width: 200px;
+  }
   .project-section {
-    div {
+      justify-content: space-around;
+      display: flex;
+      color: $main-purple;
+    .project-image {
       display: flex;
       justify-content: space-around;
-      padding: 0 30px 30px 30px;
+      padding: 0 30px 0px 0px;
       img {
         height: 300px;
         object-fit: cover;
