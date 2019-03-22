@@ -176,6 +176,11 @@ header {
 	}
 }
 
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
 // @keyframes fadeinAbout {
 //     from { opacity: 0.3; }
 //     to   { opacity: 1; }
@@ -327,7 +332,13 @@ header {
     padding: 20px;
     max-width: 270px;
   }
+  h3 {
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+  }
   p {
+    text-align: left;
     font-weight: 100;
     letter-spacing: 0.1rem;
   }
@@ -336,6 +347,7 @@ header {
     display: flex;
     div {
       min-width: 33%;
+      padding: 0 10px;
       .logo-div {
         justify-content: center;
         display: flex;

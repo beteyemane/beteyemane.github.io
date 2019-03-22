@@ -47,9 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       skillsContainer.style.display = 'none'
     }
   }
-
-
-
+  
   typewriter()
 
   burger.addEventListener('click', navbarClick)

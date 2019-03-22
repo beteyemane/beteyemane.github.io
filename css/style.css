@@ -119,6 +119,11 @@ header {
     transform: translateY(-100%); }
   100% {
     transform: translateY(0%); } }
+@keyframes mover {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-10px); } }
 #about .about-section {
   justify-content: space-around;
   display: flex;
@@ -230,14 +235,20 @@ header {
     border: 1px solid #FFF;
     padding: 20px;
     max-width: 270px; }
+  #experience h3 {
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 0.1rem; }
   #experience p {
+    text-align: left;
     font-weight: 100;
     letter-spacing: 0.1rem; }
   #experience .experience-section {
     justify-content: center;
     display: flex; }
     #experience .experience-section div {
-      min-width: 33%; }
+      min-width: 33%;
+      padding: 0 10px; }
       #experience .experience-section div .logo-div {
         justify-content: center;
         display: flex; }
