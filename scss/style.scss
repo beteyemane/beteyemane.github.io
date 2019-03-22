@@ -176,13 +176,13 @@ header {
 	}
 }
 
-@keyframes fadeinAbout {
-    from { opacity: 0.3; }
-    to   { opacity: 1; }
-    // 0%   {border-color: $white}
-    // 50%   {border-color: $bright-purple}
-    // 100%   {border-color: $white}
-}
+// @keyframes fadeinAbout {
+//     from { opacity: 0.3; }
+//     to   { opacity: 1; }
+//     // 0%   {border-color: $white}
+//     // 50%   {border-color: $bright-purple}
+//     // 100%   {border-color: $white}
+// }
 
 #about {
   .about-section{
@@ -204,8 +204,8 @@ header {
       font-weight: 100;
       h1 {
         font-size: 30px;
-        font-weight: 400;
-        border: 3px solid $main-purple;
+        font-weight: 100;
+        border: 1px solid $main-purple;
         padding: 20px;
         max-width: 200px;
       }
@@ -235,7 +235,7 @@ header {
           cursor: pointer;
         }
         .text {
-          animation: fadeinAbout 2s;
+          // animation: fadeinAbout 2s;
         	margin: 0;
         	font-size: 60px;
         	text-align: left;
@@ -281,17 +281,20 @@ header {
       color: $main-purple;
       background-color: $main-grey;
       min-width: 50%;
-      max-width: 50%;
       align-items: flex-end;
       justify-content: flex-end;
       text-align: center;
+      position: relative;
       .icons {
-        animation: fadeinAbout 1s;
+        // animation: fadeinAbout 1s;
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: 800;
         letter-spacing: 0.1rem;
         margin-right: 15%;
+      }
+      p {
+        position: absolute;
       }
       p:hover {
         transform: scale(1.5);
@@ -315,10 +318,22 @@ header {
 //===========EXPERIENCE===========//
 
 #experience {
+  background-color: $main-purple;
+  color: $white;
+  h1 {
+    font-size: 30px;
+    font-weight: 100;
+    border: 1px solid $white;
+    padding: 20px;
+    max-width: 270px;
+  }
+  p {
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+  }
   .experience-section {
     justify-content: center;
     display: flex;
-    padding: 0 30px 30px 30px;
     div {
       min-width: 33%;
       .logo-div {

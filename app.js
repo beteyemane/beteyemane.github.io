@@ -8,12 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const iconsArrow = document.querySelector('.icons-arrow')
   const skillsContainer = document.querySelector('.skills-container')
   const iconsContainer = document.querySelector('.icons-container')
+  const icons = document.querySelectorAll('.icons p')
 
-  console.log(skillsArrow, iconsContainer, skillsContainer)
 
-  //icons
-  // const navIcons = document.querySelector('.nav-icons')
-  // const navText = document.querySelector('.nav-text')
+  icons.forEach(icon => {
+    icon.style.left = Math.random() * 600 + 'px'
+    icon.style.top = Math.random() * 600 + 'px'
+  })
 
   const text = 'BETE YEMANE'
   let i  = 0
@@ -46,6 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
       skillsContainer.style.display = 'none'
     }
   }
+
+
 
   typewriter()
 
