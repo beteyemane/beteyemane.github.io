@@ -56,13 +56,13 @@ header {
 #experience, #projects, #contact {
   padding: 60px 30px 0 30px; }
 
-#about, #experience, #projects, #contact {
+#about, #experience, #projects {
   min-height: 100vh; }
-  #about h1, #experience h1, #projects h1, #contact h1 {
+  #about h1, #experience h1, #projects h1 {
     letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase; }
-  #about p, #experience p, #projects p, #contact p {
+  #about p, #experience p, #projects p {
     text-align: justify; }
 
 @keyframes fadein {
@@ -345,6 +345,36 @@ header {
           object-fit: cover; }
         #projects .project-section .project-image .small-images img:hover {
           cursor: pointer; }
+
+#contact {
+  min-height: 50vh;
+  color: #FFF;
+  background-color: #393344;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  #contact h1 {
+    font-size: 20px;
+    font-weight: 100;
+    border: 1px solid #FFF;
+    padding: 20px;
+    max-width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center; }
+  #contact div {
+    align-items: center;
+    display: flex;
+    padding-right: 17px; }
+    #contact div a:nth-child(1) img, #contact div a:nth-child(2) img {
+      height: 60px; }
+    #contact div a:nth-child(3) img {
+      height: 40px;
+      padding-left: 10px; }
+    #contact div img:hover {
+      cursor: pointer;
+      transform: scale(1.2); }
 
 @media only screen and (max-width: 600px) {
   .container {
