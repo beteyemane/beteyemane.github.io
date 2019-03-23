@@ -17,11 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
       icon.style.top = Math.random() * 600 + 'px'
       icon.classList.add('move')
     })
-    setInterval(iconMovement, 5000)
   }
-
+  setInterval(iconMovement, 5000)
   iconMovement()
-
+  
   const text = 'BETE YEMANE'
   let i  = 0
   const speed = 200
