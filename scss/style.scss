@@ -187,21 +187,13 @@ header {
     to   { opacity: 1; }
 }
 
-@keyframes large {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 100px;
-  }
-}
-
 .move {
   // -webkit-transition: 3s;
   // -moz-transition: 3s;
   // -ms-transition: 3s;
   // -o-transition: 3s;
-  transition: 1s ease-out;
+  transition: 6s;
+  transition-timing-function: ease-in-out;
 }
 
 #about {
