@@ -267,7 +267,7 @@ header {
   #projects h1, #projects h3 {
     font-weight: 100; }
   #projects h1 {
-    font-size: 30px;
+    font-size: 20px;
     border: 1px solid #393344;
     padding: 20px;
     margin: 40px;
@@ -288,15 +288,26 @@ header {
         align-items: center;
         display: flex;
         padding: 0 40px 40px 40px; }
-      #projects .project-section .project-paragraph .buttons {
-        height: 40px;
-        width: 80px;
-        border: 2px solid #393344;
-        border-radius: 10%;
-        align-items: center;
-        display: flex;
-        justify-content: center; }
-        #projects .project-section .project-paragraph .buttons img {
+      #projects .project-section .project-paragraph div {
+        justify-content: center;
+        display: flex; }
+        #projects .project-section .project-paragraph div .buttons {
+          font-size: 13.5px;
+          letter-spacing: 0.1rem;
+          color: #FFF;
+          background-color: #393344;
+          padding: 10px;
+          width: 100px;
+          margin: 10px;
+          border: 1px solid #393344;
+          align-items: center;
+          display: flex;
+          justify-content: center; }
+        #projects .project-section .project-paragraph div .buttons:hover {
+          background-color: #FFF;
+          color: #393344;
+          cursor: pointer; }
+        #projects .project-section .project-paragraph div img {
           height: 30px; }
     #projects .project-section .project-image {
       background-color: #1C1C1C;
