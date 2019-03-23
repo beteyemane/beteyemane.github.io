@@ -450,17 +450,21 @@ header {
       object-fit: cover;
       }
     .small-images {
-      width: 700px;
       justify-content: center;
       display: flex;
       margin-top: 60px;
-      img {
-        padding: .75rem;
-        height: 100px;
-        width: 100px;
-        margin: 0;
-        object-fit: cover;
-        }
+      .overlay{
+        img {
+          z-index: 100;
+          margin: .75rem;
+          height: 100px;
+          width: 100px;
+          object-fit: cover;
+          }
+      }
+      img:hover {
+        cursor: pointer;
+      }
       }
     }
   }
