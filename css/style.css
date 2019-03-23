@@ -327,11 +327,23 @@ header {
       justify-content: center;
       align-items: center;
       display: flex;
+      flex-direction: column;
       width: 700px; }
       #projects .project-section .project-image img {
         height: 300px;
         margin: 0;
         object-fit: cover; }
+      #projects .project-section .project-image .small-images {
+        width: 700px;
+        justify-content: center;
+        display: flex;
+        margin-top: 60px; }
+        #projects .project-section .project-image .small-images img {
+          padding: .75rem;
+          height: 100px;
+          width: 100px;
+          margin: 0;
+          object-fit: cover; }
 
 @media only screen and (max-width: 600px) {
   .container {
