@@ -182,13 +182,27 @@ header {
     100% { transform: translateY(-10px); }
 }
 
-// @keyframes fadeinAbout {
-//     from { opacity: 0.3; }
-//     to   { opacity: 1; }
-//     // 0%   {border-color: $white}
-//     // 50%   {border-color: $bright-purple}
-//     // 100%   {border-color: $white}
-// }
+@keyframes fadeinAbout {
+    from { opacity: 0.3; }
+    to   { opacity: 1; }
+}
+
+@keyframes large {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
+
+.move {
+  // -webkit-transition: 3s;
+  // -moz-transition: 3s;
+  // -ms-transition: 3s;
+  // -o-transition: 3s;
+  transition: 1s ease-out;
+}
 
 #about {
   .about-section {
@@ -293,8 +307,7 @@ header {
       text-align: center;
       position: relative;
       .icons {
-        // animation: mover 5s infinite;
-        animation: fadeinAbout 1s;
+        animation: large 5s linear infinite;
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: 800;

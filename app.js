@@ -11,10 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const icons = document.querySelectorAll('.icons p')
 
 
-  icons.forEach(icon => {
-    icon.style.left = Math.random() * 600 + 'px'
-    icon.style.top = Math.random() * 600 + 'px'
-  })
+  function iconMovement() {
+    icons.forEach(icon => {
+      icon.style.left = Math.random() * 600 + 'px'
+      icon.style.top = Math.random() * 600 + 'px'
+      icon.classList.add('move')
+    })
+  }
+  setInterval(iconMovement, 1000)
 
   const text = 'BETE YEMANE'
   let i  = 0
@@ -47,10 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
       skillsContainer.style.display = 'none'
     }
   }
-  
+
+
   typewriter()
 
   burger.addEventListener('click', navbarClick)
   skillsArrow.addEventListener('click', skills)
   iconsArrow.addEventListener('click', skills)
+
 })
