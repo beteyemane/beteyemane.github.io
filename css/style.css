@@ -142,11 +142,12 @@ header {
     flex-direction: column;
     font-weight: 100; }
     #about .about-section .about-paragraph h1 {
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 100;
       border: 1px solid #393344;
       padding: 20px;
-      max-width: 200px; }
+      max-width: 200px;
+      text-transform: uppercase; }
   #about .about-section .skills-container {
     align-items: flex-end;
     justify-content: flex-end;
@@ -232,20 +233,23 @@ header {
   background-color: #393344;
   color: #FFF; }
   #experience h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 100;
     border: 1px solid #FFF;
     padding: 20px;
     max-width: 270px; }
   #experience h3 {
+    font-size: 17px;
     text-align: center;
     font-weight: 100;
     letter-spacing: 0.1rem; }
   #experience p {
+    font-size: 14px;
     text-align: left;
     font-weight: 100;
     letter-spacing: 0.1rem; }
   #experience .experience-section {
+    margin-top: 70px;
     justify-content: center;
     display: flex; }
     #experience .experience-section div {
@@ -260,13 +264,17 @@ header {
 #projects {
   font-weight: 100;
   padding: 0; }
+  #projects h1, #projects h3 {
+    font-weight: 100; }
   #projects h1 {
     font-size: 30px;
-    font-weight: 100;
     border: 1px solid #393344;
     padding: 20px;
     margin: 40px;
     max-width: 200px; }
+  #projects h3 {
+    padding: 0 40px;
+    text-transform: uppercase; }
   #projects .project-section {
     display: flex;
     color: #393344; }
@@ -280,6 +288,16 @@ header {
         align-items: center;
         display: flex;
         padding: 0 40px 40px 40px; }
+      #projects .project-section .project-paragraph .buttons {
+        height: 40px;
+        width: 80px;
+        border: 2px solid #393344;
+        border-radius: 10%;
+        align-items: center;
+        display: flex;
+        justify-content: center; }
+        #projects .project-section .project-paragraph .buttons img {
+          height: 30px; }
     #projects .project-section .project-image {
       background-color: #1C1C1C;
       justify-content: center;
