@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
   iconsArrow.addEventListener('click', skills)
 
   sunsetBarlevardOne.addEventListener('click', enlargeImage('sunset-barlevard.png'))
-  sunsetBarlevardTwo.addEventListener('click', enlargeImage('sunset-barlevard-crawl.png'))
-  sunsetBarlevardThree.addEventListener('click', enlargeImage('sunset-barlevard-home-crawl.png'))
-  sunsetBarlevardFour.addEventListener('click', enlargeImage('sunset-barlevard-add-crawl.png'))
+  // sunsetBarlevardTwo.addEventListener('click', enlargeImage('sunset-barlevard-crawl.png'))
+  // sunsetBarlevardThree.addEventListener('click', enlargeImage('sunset-barlevard-home-crawl.png'))
+  // sunsetBarlevardFour.addEventListener('click', enlargeImage('sunset-barlevard-add-crawl.png'))
 
 
 })
