@@ -270,6 +270,9 @@ header {
     #experience .experience-section .logos {
       height: 75px; }
 
+.transition {
+  transition: all 0.5s ease; }
+
 #projects {
   padding: 0;
   display: flex;
@@ -336,9 +339,17 @@ header {
       justify-content: center;
       align-items: center;
       display: flex;
-      flex-direction: column;
       width: 700px;
       height: 70vh; }
+      #projects .project-section .project-image .arrow {
+        border-bottom: 5px solid #393344;
+        border-right: 5px solid #393344;
+        height: 20px;
+        width: 20px; }
+      #projects .project-section .project-image .left-arrow {
+        transform: rotate(130deg); }
+      #projects .project-section .project-image .right-arrow {
+        transform: rotate(-45deg); }
       #projects .project-section .project-image img {
         height: 260px;
         margin: 0;
