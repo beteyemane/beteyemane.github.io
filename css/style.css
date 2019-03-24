@@ -290,6 +290,10 @@ header {
     #projects .project-section .project-border {
       border-left: 1px solid #393344; }
     #projects .project-section .project-paragraph {
+      color: #FFF;
+      font-weight: 100;
+      letter-spacing: 0.1rem;
+      font-size: smaller;
       padding: 0 40px;
       justify-content: center;
       height: 70vh;

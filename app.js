@@ -74,10 +74,18 @@ document.addEventListener('DOMContentLoaded', () => {
   skillsArrow.addEventListener('click', skills)
   iconsArrow.addEventListener('click', skills)
 
-  sunsetBarlevardOne.addEventListener('click', enlargeImage('sunset-barlevard.png'))
-  // sunsetBarlevardTwo.addEventListener('click', enlargeImage('sunset-barlevard-crawl.png'))
-  // sunsetBarlevardThree.addEventListener('click', enlargeImage('sunset-barlevard-home-crawl.png'))
-  // sunsetBarlevardFour.addEventListener('click', enlargeImage('sunset-barlevard-add-crawl.png'))
+  sunsetBarlevardOne.addEventListener('click', function(){
+    currentImage.src = './assets/sunset-barlevard.png'
+  })
+  sunsetBarlevardTwo.addEventListener('click', function(){
+    currentImage.src = './assets/sunset-barlevard-crawl.png'
+  })
+  sunsetBarlevardThree.addEventListener('click', function(){
+    currentImage.src = './assets/sunset-barlevard-home-crawl.png'
+  })
+  sunsetBarlevardFour.addEventListener('click', function(){
+    currentImage.src = './assets/sunset-barlevard-add-crawl.png'
+  })
 
 
 })

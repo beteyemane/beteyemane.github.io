@@ -398,6 +398,10 @@ header {
     border-left: 1px solid $main-purple;
   }
   .project-paragraph {
+    color: $white;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    font-size: smaller;
     padding: 0 40px;
     justify-content: center;
     height: 70vh;
