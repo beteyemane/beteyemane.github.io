@@ -9,22 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const skillsContainer = document.querySelector('.skills-container')
   const iconsContainer = document.querySelector('.icons-container')
   const icons = document.querySelectorAll('.icons p')
-  const sunsetBarlevardOne = document.querySelector('.sunset-barlevard-one')
-  const sunsetBarlevardTwo = document.querySelector('.sunset-barlevard-two')
-  const sunsetBarlevardThree = document.querySelector('.sunset-barlevard-three')
-  const sunsetBarlevardFour = document.querySelector('.sunset-barlevard-four')
+  const images = document.querySelectorAll('.images')
 
   const currentImage = document.querySelector('#current-image')
 
-  console.log(sunsetBarlevardOne)
-
-  function enlargeImage(image) {
-    const path = './assets/'
-    // image = 'sunset-barlevard.png'
-    const source = path + image
-    currentImage.src = source
-    currentImage.alt = source
-  }
+  images.forEach(image => {
+    image.addEventListener('click', function(e) {
+      const source = e.target.getAttribute('src')
+      currentImage.src = source
+    })
+  })
 
   function iconMovement() {
     icons.forEach(icon => {
@@ -73,19 +67,5 @@ document.addEventListener('DOMContentLoaded', () => {
   burger.addEventListener('click', navbarClick)
   skillsArrow.addEventListener('click', skills)
   iconsArrow.addEventListener('click', skills)
-
-  sunsetBarlevardOne.addEventListener('click', function(){
-    currentImage.src = './assets/sunset-barlevard.png'
-  })
-  sunsetBarlevardTwo.addEventListener('click', function(){
-    currentImage.src = './assets/sunset-barlevard-crawl.png'
-  })
-  sunsetBarlevardThree.addEventListener('click', function(){
-    currentImage.src = './assets/sunset-barlevard-home-crawl.png'
-  })
-  sunsetBarlevardFour.addEventListener('click', function(){
-    currentImage.src = './assets/sunset-barlevard-add-crawl.png'
-  })
-
 
 })
