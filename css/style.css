@@ -39,7 +39,7 @@ header {
         margin-right: 46.86px; }
         header .container nav ul li {
           list-style: none; }
-          header .container nav ul li .nav-text {
+          header .container nav ul li .nav-texts {
             display: none;
             margin: 0;
             text-decoration: none;
@@ -258,7 +258,7 @@ header {
     font-weight: 100;
     letter-spacing: 0.1rem; }
   #experience .experience-section {
-    margin-top: 70px;
+    margin: 70px 100px 0 100px;
     justify-content: center;
     display: flex; }
     #experience .experience-section div {
@@ -444,13 +444,12 @@ header {
 
   .experience-section {
     flex-direction: column;
-    display: flex; }
+    display: flex;
+    margin: 0 !important; }
 
-  .project-section div {
-    flex-direction: column;
-    display: flex; }
-    .project-section div img {
-      max-height: 200px; } }
+  .project-section .project-image .small-images {
+    display: flex;
+    flex-direction: row; } }
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   .project-section div {
     flex-direction: column;

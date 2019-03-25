@@ -53,7 +53,7 @@ header {
         margin-right: 46.86px;
         li {
           list-style: none;
-          .nav-text {
+          .nav-texts {
             display: none;
             margin: 0;
             text-decoration: none;
@@ -354,7 +354,7 @@ header {
     letter-spacing: 0.1rem;
   }
   .experience-section {
-    margin-top: 70px;
+    margin: 70px 100px 0 100px;
     justify-content: center;
     display: flex;
     div {
@@ -595,13 +595,13 @@ header {
   .experience-section {
     flex-direction: column;
     display: flex;
+    margin: 0 !important;
   }
   .project-section {
-    div {
-      flex-direction: column;
-      display: flex;
-      img {
-        max-height: 200px;
+    .project-image {
+      .small-images {
+        display: flex;
+        flex-direction: row;
       }
     }
   }

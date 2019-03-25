@@ -4,11 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger')
   const name = document.querySelector('.name')
   const arrow = document.querySelector('.arrow')
-  const skillsArrow = document.querySelector('.skills-arrow')
-  const iconsArrow = document.querySelector('.icons-arrow')
-  const skillsContainer = document.querySelector('.skills-container')
-  const iconsContainer = document.querySelector('.icons-container')
+  // const skillsArrow = document.querySelector('.skills-arrow')
+  // const iconsArrow = document.querySelector('.icons-arrow')
+  // const skillsContainer = document.querySelector('.skills-container')
+  // const iconsContainer = document.querySelector('.icons-container')
   const icons = document.querySelectorAll('.icons p')
+  // const navIcons = document.querySelectorAll('.nav-icons')
+  // const navTexts = document.querySelectorAll('.nav-texts')
+  // console.log(navIcons, navTexts)
+  //
+  // navIcons.forEach(navIcon => {
+  //   navIcon.addEventListener('mouseover', function(e) {
+  //     e.target.style.display = 'none'
+  //
+  //   })
+  // })
 
   //sunset barlevard images
   const currentSbImage = document.querySelector('#current-sb-image')
@@ -47,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   //array of all the three project images to re-use the selectImages function
-
   const dataImages = [
     [sbImages, currentSbImage],
     [csImages, currentCsImage],
@@ -59,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   //generates random pixel place
-
   function iconMovement() {
     icons.forEach(icon => {
       icon.style.left = Math.random() * 600 + 'px'
@@ -78,20 +86,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function skills() {
-    if(iconsContainer.style.display === 'flex') {
-      iconsContainer.style.display = 'none'
-      skillsContainer.style.display = 'flex'
-    } else {
-      iconsContainer.style.display = 'flex'
-      skillsContainer.style.display = 'none'
-    }
-  }
+  // function skills() {
+  //   if(iconsContainer.style.display === 'flex') {
+  //     iconsContainer.style.display = 'none'
+  //     skillsContainer.style.display = 'flex'
+  //   } else {
+  //     iconsContainer.style.display = 'flex'
+  //     skillsContainer.style.display = 'none'
+  //   }
+  // }
 
   typewriter()
 
   burger.addEventListener('click', navbarClick)
-  skillsArrow.addEventListener('click', skills)
-  iconsArrow.addEventListener('click', skills)
+  // skillsArrow.addEventListener('click', skills)
+  // iconsArrow.addEventListener('click', skills)
 
 })
