@@ -8,6 +8,11 @@ body {
   margin: 0;
   font-family: "Helvetica"; }
 
+main {
+  scroll-snap-type: mandatory; }
+  main section {
+    scroll-snap-align: start; }
+
 header {
   background-color: #393344;
   overflow: hidden;

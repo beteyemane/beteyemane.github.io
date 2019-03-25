@@ -19,7 +19,10 @@ body {
 }
 
 main {
-
+  scroll-snap-type: mandatory;
+  section {
+    scroll-snap-align: start;
+  }
 }
 
 //========NAVBAR==========//

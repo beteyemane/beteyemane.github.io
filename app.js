@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       image.addEventListener('click', (e) => {
         const source = e.target.getAttribute('src')
         currentImage.src = source
-        currentImage.classList.add('fadeIn')
+        // currentImage.classList.add('fadeIn')
       })
     })
   }
