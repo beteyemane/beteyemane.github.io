@@ -463,10 +463,9 @@ header {
   }
   .project-image {
     background-color: $main-grey;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
     width: 700px;
     height: 70vh;
     img {
@@ -477,6 +476,7 @@ header {
     .small-images {
       justify-content: center;
       display: flex;
+      flex-direction: column;
       .overlay {
         background-color: black;
         height: 75px;
