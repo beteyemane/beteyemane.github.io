@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  AOS.init()
 
   const navbar = document.querySelector('#nav-links')
   const burger = document.querySelector('.burger')
@@ -52,6 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
       image.addEventListener('click', (e) => {
         const source = e.target.getAttribute('src')
         currentImage.src = source
+        console.log(currentImage)
+        currentImage.classList.add('fadeIn')
       })
     })
   }
@@ -101,5 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
   burger.addEventListener('click', navbarClick)
   // skillsArrow.addEventListener('click', skills)
   // iconsArrow.addEventListener('click', skills)
+
 
 })

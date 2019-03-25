@@ -111,8 +111,15 @@ header {
     // 100%   {border-color: $white}
 }
 
+.fadeIn {
+  animation: fadein 2s;
+}
+
 #home {
-  // background-image: linear-gradient(to bottom right, rgb(57, 51, 68), rgba(0, 0, 0, .8)), url('https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  // background-image: linear-gradient(to bottom right, rgb(57, 51, 68), rgba(0, 0, 0, .8)), url('https://www.newgenapps.com/hubfs/canvas/images/parallax/Website-Design-Background.png');
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   letter-spacing: 0.1rem;
   font-weight: 500;
   text-align: center;
