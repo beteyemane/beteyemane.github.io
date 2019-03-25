@@ -79,7 +79,8 @@ header {
   display: flex;
   height: 100vh;
   color: #FFF;
-  background-color: #393344; }
+  background-color: #393344;
+  font-family: 'Open Sans', sans-serif; }
   #home div {
     flex-direction: column;
     display: flex;
@@ -88,7 +89,7 @@ header {
       margin-top: 50%;
       padding: 60px 60px 20px 60px; }
       #home div .border h1 {
-        font-size: 30px;
+        font-size: 40px;
         margin: 0;
         font-weight: 400; }
       #home div .border h1, #home div .border h2, #home div .border p {
@@ -100,11 +101,11 @@ header {
         width: 400px; }
     #home div .arrow {
       min-height: 20px;
-      border-bottom: 1px solid #FFF;
-      border-right: 1px solid #FFF;
+      border-bottom: 3px solid #FFF;
+      border-right: 3px solid #FFF;
       width: 20px;
       transform: rotate(45deg);
-      margin-left: 47.5%;
+      margin-left: 47.9%;
       display: none;
       animation: fadein 2s; }
     #home div .line {
@@ -437,7 +438,6 @@ header {
       justify-content: center;
       display: flex; }
     .about-section .about-paragraph {
-      padding-top: 70px !important;
       border: none !important; }
     .about-section .icons {
       text-align: center; }
