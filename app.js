@@ -47,13 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
       arrow.style.display = 'block'
   }
 
+
   //changes src of current image to small image src on click
   function selectImages(images, currentImage) {
     images.forEach(image => {
       image.addEventListener('click', (e) => {
         const source = e.target.getAttribute('src')
         currentImage.src = source
-        console.log(currentImage)
         currentImage.classList.add('fadeIn')
       })
     })

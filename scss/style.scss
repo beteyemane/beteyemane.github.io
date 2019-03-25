@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  scroll-snap-type: mandatory;
+
 }
 
 //========NAVBAR==========//
@@ -386,6 +386,7 @@ header {
 }
 
 #projects {
+  scroll-snap-type: x mandatory;
   padding: 0;
   display: flex;
   overflow-x: auto;
@@ -405,6 +406,7 @@ header {
     text-transform: uppercase;
   }
   .project-section {
+    scroll-snap-align: start;
     display: flex;
     color: $main-purple;
   .project-border {

@@ -8,9 +8,6 @@ body {
   margin: 0;
   font-family: "Helvetica"; }
 
-main {
-  scroll-snap-type: mandatory; }
-
 header {
   background-color: #393344;
   overflow: hidden;
@@ -278,6 +275,7 @@ header {
   transition: all 0.5s ease; }
 
 #projects {
+  scroll-snap-type: x mandatory;
   padding: 0;
   display: flex;
   overflow-x: auto;
@@ -292,6 +290,7 @@ header {
   #projects h3 {
     text-transform: uppercase; }
   #projects .project-section {
+    scroll-snap-align: start;
     display: flex;
     color: #393344; }
     #projects .project-section .project-border {
