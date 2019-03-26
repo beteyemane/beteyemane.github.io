@@ -214,6 +214,7 @@ header {
       #about .about-section .skills-container .text .line:nth-child(even) {
         transform: skew(0deg, -30deg) scaleY(1.33333); }
   #about .about-section .icons-container {
+    overflow: hidden;
     display: flex;
     color: #393344;
     background-color: #1C1C1C;

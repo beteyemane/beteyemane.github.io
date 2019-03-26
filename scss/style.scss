@@ -302,6 +302,7 @@ header {
         }
     }
     .icons-container {
+      overflow: hidden;
       display: flex;
       color: $main-purple;
       background-color: $main-grey;

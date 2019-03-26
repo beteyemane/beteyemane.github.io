@@ -33,6 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentC4Image = document.querySelector('#current-c4-image')
   const c4Images = document.querySelectorAll('.c4-images')
 
+  //wevent images
+  const currentWvImage = document.querySelector('#current-wv-image')
+  const wvImages = document.querySelectorAll('.wv-images')
+
   const text = 'BETE YEMANE'
   let i  = 0
   const speed = 200
@@ -47,14 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
       arrow.style.display = 'block'
   }
 
-
   //changes src of current image to small image src on click
   function selectImages(images, currentImage) {
     images.forEach(image => {
       image.addEventListener('click', (e) => {
+        // currentImage.classList.toggle('fadeIn')
         const source = e.target.getAttribute('src')
         currentImage.src = source
-        // currentImage.classList.add('fadeIn')
+        currentImage.alt = source
       })
     })
   }
@@ -63,7 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataImages = [
     [sbImages, currentSbImage],
     [csImages, currentCsImage],
-    [c4Images, currentC4Image]
+    [c4Images, currentC4Image],
+    [wvImages, currentWvImage]
   ]
 
   dataImages.forEach(dataImage => {
@@ -73,8 +78,12 @@ document.addEventListener('DOMContentLoaded', () => {
   //generates random pixel place
   function iconMovement() {
     icons.forEach(icon => {
-      icon.style.left = Math.random() * 600 + 'px'
-      icon.style.top = Math.random() * 600 + 'px'
+      const random = []
+      const left = Math.floor(Math.random()*600) + 'px'
+      const top = Math.floor(Math.random()*600) + 'px'
+      //while loop
+      icon.style.left = left
+      icon.style.top = top
       icon.classList.add('move')
     })
   }
