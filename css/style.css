@@ -148,7 +148,6 @@ header {
     border-radius: 50%;
     height: 200px; }
   #about .about-section .about-paragraph {
-    max-width: 700px;
     padding: 0px 20px 20px 20px;
     height: 100vh;
     justify-content: center;
@@ -218,7 +217,6 @@ header {
     color: #393344;
     background-color: #1C1C1C;
     min-width: 50%;
-    max-width: 700px;
     align-items: flex-end;
     justify-content: flex-end;
     text-align: center;
