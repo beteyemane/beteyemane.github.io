@@ -218,6 +218,7 @@ header {
     color: #393344;
     background-color: #1C1C1C;
     min-width: 50%;
+    max-width: 700px;
     align-items: flex-end;
     justify-content: flex-end;
     text-align: center;
