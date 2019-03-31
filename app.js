@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //generates random pixel place
   function iconMovement() {
     icons.forEach(icon => {
-      const random = []
+      // const random = []
       const left = Math.floor(Math.random()*600) + 'px'
       const top = Math.floor(Math.random()*600) + 'px'
       //while loop
