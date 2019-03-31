@@ -263,6 +263,7 @@ header {
         max-width: 200px;
         text-transform: uppercase; }
     #skills .skills-section .icons-container {
+      width: 50%;
       overflow: hidden;
       display: flex;
       color: #393344;
@@ -271,6 +272,13 @@ header {
       justify-content: flex-end;
       text-align: center;
       position: relative; }
+      #skills .skills-section .icons-container .icons {
+        padding: 50px; }
+        #skills .skills-section .icons-container .icons p {
+          display: inline-block;
+          position: absolute; }
+          #skills .skills-section .icons-container .icons p i {
+            font-size: 3rem; }
 
 #experience {
   background-color: #393344;

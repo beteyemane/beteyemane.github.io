@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger')
   const name = document.querySelector('.name')
   const arrow = document.querySelector('.arrow')
+  const icons = document.querySelectorAll('.icons p')
   // const skillsArrow = document.querySelector('.skills-arrow')
   // const iconsArrow = document.querySelector('.icons-arrow')
   // const skillsContainer = document.querySelector('.skills-container')
   // const iconsContainer = document.querySelector('.icons-container')
-  const icons = document.querySelectorAll('.icons p')
   // const navIcons = document.querySelectorAll('.nav-icons')
   // const navTexts = document.querySelectorAll('.nav-texts')
   // console.log(navIcons, navTexts)
@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   //
   //   })
   // })
+
+  console.log(icons)
 
   //sunset barlevard images
   const currentSbImage = document.querySelector('#current-sb-image')

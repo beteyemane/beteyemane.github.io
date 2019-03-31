@@ -367,6 +367,7 @@ header {
       }
     }
     .icons-container {
+      width: 50%;
       overflow: hidden;
       display: flex;
       color: $main-purple;
@@ -375,6 +376,16 @@ header {
       justify-content: flex-end;
       text-align: center;
       position: relative;
+      .icons {
+        padding: 50px;
+        p {
+          display: inline-block;
+          position: absolute;
+          i {
+            font-size: 3rem;
+          }
+        }
+      }
     }
   }
 }
