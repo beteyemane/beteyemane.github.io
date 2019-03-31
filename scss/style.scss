@@ -117,10 +117,11 @@ header {
 }
 
 #home {
-  // background-image: linear-gradient(to bottom right, rgb(57, 51, 68), rgba(0, 0, 0, .8)), url('https://www.newgenapps.com/hubfs/canvas/images/parallax/Website-Design-Background.png');
+  // background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Regular_triangle.svg');
   // background-position: center;
   // background-repeat: no-repeat;
   // background-size: cover;
+  // background-size: 600px;
   letter-spacing: 0.1rem;
   font-weight: 500;
   text-align: center;
@@ -136,13 +137,17 @@ header {
     flex-direction: column;
     display: flex;
     justify-content: center;
+    .triangle {
+
+    }
     .border {
-      margin-top: 50%;
+      margin-top: 30%;
+      width: 790px;
       padding: 60px 60px 20px 60px;
       h1 {
-        font-size: 40px;
+        font-size: 80px;
         margin: 0;
-        font-weight: 400;
+        font-weight: 800;
       }
       h1, h2, p {
         letter-spacing: 0.5rem;
@@ -161,8 +166,8 @@ header {
       border-right: 3px solid $white;
       width: 20px;
       transform: rotate(45deg);
-      margin-left: 47.9%;
-      display: none;
+      margin-left: 48.5%;
+      // display: none;
       animation: fadein 2s;
     }
     .line {

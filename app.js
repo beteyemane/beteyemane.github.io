@@ -37,19 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentWvImage = document.querySelector('#current-wv-image')
   const wvImages = document.querySelectorAll('.wv-images')
 
-  const text = 'BETE YEMANE'
-  let i  = 0
-  const speed = 200
-
-  function typewriter() {
-    if (i < text.length) {
-      name.innerHTML += text.charAt(i)
-      i++
-      setTimeout(typewriter, speed)
-    }
-    if (name.innerHTML.length === text.length)
-      arrow.style.display = 'block'
-  }
+  // const text = 'BETE YEMANE'
+  // let i  = 0
+  // const speed = 400
+  //
+  // function typewriter() {
+  //   if (i < text.length) {
+  //     name.innerHTML += text.charAt(i)
+  //     i++
+  //     setTimeout(typewriter, speed)
+  //   }
+  //   if (name.innerHTML.length === text.length)
+  //     arrow.style.display = 'block'
+  // }
 
   //changes src of current image to small image src on click
   function selectImages(images, currentImage) {

@@ -89,12 +89,13 @@ header {
     display: flex;
     justify-content: center; }
     #home div .border {
-      margin-top: 50%;
+      margin-top: 30%;
+      width: 790px;
       padding: 60px 60px 20px 60px; }
       #home div .border h1 {
-        font-size: 40px;
+        font-size: 80px;
         margin: 0;
-        font-weight: 400; }
+        font-weight: 800; }
       #home div .border h1, #home div .border h2, #home div .border p {
         letter-spacing: 0.5rem; }
       #home div .border h2 {
@@ -108,8 +109,7 @@ header {
       border-right: 3px solid #FFF;
       width: 20px;
       transform: rotate(45deg);
-      margin-left: 47.9%;
-      display: none;
+      margin-left: 48.5%;
       animation: fadein 2s; }
     #home div .line {
       border-right: 1px solid #FFF;
