@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function selectImages(images, currentImage) {
     images.forEach(image => {
       image.addEventListener('click', (e) => {
-        // currentImage.classList.toggle('fadeIn')
         const source = e.target.getAttribute('src')
         currentImage.src = source
         currentImage.alt = source
@@ -108,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //   }
   // }
 
-  typewriter()
+  // typewriter()
 
   burger.addEventListener('click', navbarClick)
   // skillsArrow.addEventListener('click', skills)
