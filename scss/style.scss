@@ -46,16 +46,16 @@ header {
     display: flex;
     min-height: 62px;
     nav {
-      min-width: 40%;
-      text-align: center;
       align-self: center;
       ul {
+        padding: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         li {
           list-style: none;
           .nav-texts {
+            padding: 0 65px;
             margin: 0;
             text-decoration: none;
             color: $white;
@@ -87,7 +87,7 @@ header {
   }
 }
 
-#experience, #projects {
+#experience, .projects {
    padding: 60px 30px 0 30px;
  }
 
@@ -350,7 +350,7 @@ header {
     .skills-paragraph {
       text-transform: uppercase;
       width: 50%;
-      padding: 0px 20px 20px 20px;
+      padding: 40px 20px 0 20px;
       height: 100vh;
       justify-content: center;
       display: flex;
@@ -365,6 +365,9 @@ header {
         max-width: 200px;
         text-transform: uppercase;
       }
+      p {
+        display: inline-block;
+      }
     }
     .icons-container {
       width: 50%;
@@ -372,7 +375,7 @@ header {
       display: flex;
       color: $main-purple;
       min-width: 50%;
-      align-items: flex-end;
+      align-items: center;
       justify-content: flex-end;
       text-align: center;
       position: relative;
@@ -383,6 +386,12 @@ header {
           position: absolute;
           i {
             font-size: 3rem;
+          }
+          i:hover {
+            cursor: pointer;
+          }
+          i:hover ~ p#html {
+            color: $main-purple;
           }
         }
       }
@@ -440,6 +449,26 @@ header {
 }
 
 #projects {
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  background-color: $main-grey;
+  h1 {
+    background-color: $main-grey;
+    margin: 0 0 0 40px;
+    font-size: 20px;
+    font-weight: 100;
+    border: 1px solid $white;
+    padding: 20px;
+    max-width: 270px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
+.projects {
   scroll-snap-type: x mandatory;
   padding: 0;
   display: flex;
@@ -464,7 +493,7 @@ header {
     display: flex;
     color: $main-purple;
   .project-border {
-    border-left: 1px solid $main-purple;
+    // border-left: 1px solid $main-purple;
   }
   .project-paragraph {
     color: $white;
@@ -554,15 +583,15 @@ header {
     }
   }
 }
-#projects::-webkit-scrollbar {
+.projects::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
-#projects::-webkit-scrollbar:horizontal {
+.projects::-webkit-scrollbar:horizontal {
     height: 11px;
 }
 
-#projects::-webkit-scrollbar-thumb {
+.projects::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgba(255,255,255,.5);
   box-shadow: 0 0 1px rgba(255,255,255,.5);

@@ -31,16 +31,16 @@ header {
     display: flex;
     min-height: 62px; }
     header .container nav {
-      min-width: 40%;
-      text-align: center;
       align-self: center; }
       header .container nav ul {
+        padding: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between; }
         header .container nav ul li {
           list-style: none; }
           header .container nav ul li .nav-texts {
+            padding: 0 65px;
             margin: 0;
             text-decoration: none;
             color: #FFF;
@@ -53,7 +53,7 @@ header {
     header .container .right-bar {
       width: 46.86px; }
 
-#experience, #projects {
+#experience, .projects {
   padding: 60px 30px 0 30px; }
 
 #about, #experience, #skills {
@@ -248,7 +248,7 @@ header {
     #skills .skills-section .skills-paragraph {
       text-transform: uppercase;
       width: 50%;
-      padding: 0px 20px 20px 20px;
+      padding: 40px 20px 0 20px;
       height: 100vh;
       justify-content: center;
       display: flex;
@@ -262,13 +262,15 @@ header {
         padding: 20px;
         max-width: 200px;
         text-transform: uppercase; }
+      #skills .skills-section .skills-paragraph p {
+        display: inline-block; }
     #skills .skills-section .icons-container {
       width: 50%;
       overflow: hidden;
       display: flex;
       color: #393344;
       min-width: 50%;
-      align-items: flex-end;
+      align-items: center;
       justify-content: flex-end;
       text-align: center;
       position: relative; }
@@ -279,6 +281,10 @@ header {
           position: absolute; }
           #skills .skills-section .icons-container .icons p i {
             font-size: 3rem; }
+          #skills .skills-section .icons-container .icons p i:hover {
+            cursor: pointer; }
+          #skills .skills-section .icons-container .icons p i:hover ~ p#html {
+            color: #393344; }
 
 #experience {
   background-color: #393344;
@@ -316,27 +322,43 @@ header {
   transition: all 0.5s ease; }
 
 #projects {
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  background-color: #1C1C1C; }
+  #projects h1 {
+    background-color: #1C1C1C;
+    margin: 0 0 0 40px;
+    font-size: 20px;
+    font-weight: 100;
+    border: 1px solid #FFF;
+    padding: 20px;
+    max-width: 270px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF; }
+
+.projects {
   scroll-snap-type: x mandatory;
   padding: 0;
   display: flex;
   overflow-x: auto;
   background-color: #1C1C1C; }
-  #projects h1, #projects h3 {
+  .projects h1, .projects h3 {
     font-weight: 600; }
-  #projects h1 {
+  .projects h1 {
     font-size: 20px;
     border: 1px solid #393344;
     padding: 20px;
     max-width: 200px; }
-  #projects h3 {
+  .projects h3 {
     text-transform: uppercase; }
-  #projects .project-section {
+  .projects .project-section {
     scroll-snap-align: start;
     display: flex;
     color: #393344; }
-    #projects .project-section .project-border {
-      border-left: 1px solid #393344; }
-    #projects .project-section .project-paragraph {
+    .projects .project-section .project-paragraph {
       color: #FFF;
       font-weight: 100;
       letter-spacing: 0.1rem;
@@ -347,19 +369,19 @@ header {
       width: 700px;
       display: flex;
       flex-direction: column; }
-      #projects .project-section .project-paragraph p {
+      .projects .project-section .project-paragraph p {
         align-items: center;
         display: flex; }
-      #projects .project-section .project-paragraph .technologies {
+      .projects .project-section .project-paragraph .technologies {
         display: flex;
         flex-wrap: wrap; }
-        #projects .project-section .project-paragraph .technologies p {
+        .projects .project-section .project-paragraph .technologies p {
           padding: 10px;
           margin: 0; }
-      #projects .project-section .project-paragraph div {
+      .projects .project-section .project-paragraph div {
         justify-content: center;
         display: flex; }
-        #projects .project-section .project-paragraph div .buttons {
+        .projects .project-section .project-paragraph div .buttons {
           font-size: 13.5px;
           letter-spacing: 0.1rem;
           color: #FFF;
@@ -372,48 +394,48 @@ header {
           align-items: center;
           display: flex;
           justify-content: center; }
-        #projects .project-section .project-paragraph div .buttons:hover {
+        .projects .project-section .project-paragraph div .buttons:hover {
           background-color: #FFF;
           color: #393344;
           cursor: pointer; }
-        #projects .project-section .project-paragraph div img {
+        .projects .project-section .project-paragraph div img {
           height: 30px; }
-    #projects .project-section .project-image {
+    .projects .project-section .project-image {
       background-color: #1C1C1C;
       align-items: center;
       display: flex;
       width: 700px;
       height: 70vh; }
-      #projects .project-section .project-image img {
+      .projects .project-section .project-image img {
         height: 260px;
         margin: 0;
         object-fit: cover; }
-      #projects .project-section .project-image .small-images {
+      .projects .project-section .project-image .small-images {
         justify-content: center;
         display: flex;
         flex-direction: column; }
-        #projects .project-section .project-image .small-images .overlay {
+        .projects .project-section .project-image .small-images .overlay {
           background-color: black;
           height: 75px;
           width: 75px;
           margin: .75rem; }
-          #projects .project-section .project-image .small-images .overlay img {
+          .projects .project-section .project-image .small-images .overlay img {
             height: 75px;
             width: 75px;
             object-fit: cover;
             opacity: 0.2; }
-        #projects .project-section .project-image .small-images img:hover {
+        .projects .project-section .project-image .small-images img:hover {
           cursor: pointer;
           transform: scale(1.05);
           opacity: 1; }
 
-#projects::-webkit-scrollbar {
+.projects::-webkit-scrollbar {
   -webkit-appearance: none; }
 
-#projects::-webkit-scrollbar:horizontal {
+.projects::-webkit-scrollbar:horizontal {
   height: 11px; }
 
-#projects::-webkit-scrollbar-thumb {
+.projects::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }

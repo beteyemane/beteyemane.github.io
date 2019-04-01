@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     icons.forEach(icon => {
       // const random = []
       const left = Math.floor(Math.random()*600) + 'px'
-      const top = Math.floor(Math.random()*600) + 'px'
+      const top = Math.floor(Math.random()* 600) + 'px'
       //while loop
       icon.style.left = left
       icon.style.top = top
@@ -90,6 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   setInterval(iconMovement, 5000)
   iconMovement()
+
+  function iconHover() {
+    icons.forEach(icon => {
+      icon.addEventListener('mouseover', () => {
+      })
+    })
+  }
 
   function navbarClick() {
     if(navbar.style.display === 'block') {
@@ -115,5 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // skillsArrow.addEventListener('click', skills)
   // iconsArrow.addEventListener('click', skills)
 
+  iconHover()
 
 })
