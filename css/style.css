@@ -207,7 +207,11 @@ header {
         transform: skew(60deg, -30deg) scaleY(0.66667); }
       #about .about-section .skills-container .text .line:nth-child(even) {
         transform: skew(0deg, -30deg) scaleY(1.33333); }
-  #about .about-section .icons-container {
+  #about .about-section .interests-container {
+    background-image: url("https://images.pexels.com/photos/1125761/pexels-photo-1125761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     display: flex;
     color: #393344;
@@ -217,26 +221,26 @@ header {
     justify-content: flex-end;
     text-align: center;
     position: relative; }
-    #about .about-section .icons-container .icons {
+    #about .about-section .interests-container .icons {
       animation: large 5s linear infinite;
       font-size: 1rem;
       text-transform: uppercase;
       font-weight: 800;
       letter-spacing: 0.1rem;
       margin-right: 15%; }
-    #about .about-section .icons-container p {
-      position: absolute; }
-    #about .about-section .icons-container p:hover {
+    #about .about-section .interests-container p {
+      color: #FFF; }
+    #about .about-section .interests-container p:hover {
       transform: scale(1.5);
       cursor: pointer; }
-    #about .about-section .icons-container .icons-arrow {
+    #about .about-section .interests-container .icons-arrow {
       border-bottom: 5px solid #393344;
       border-right: 5px solid #393344;
       height: 20px;
       width: 20px;
       transform: rotate(-45deg);
       margin: 60px; }
-    #about .about-section .icons-container .icons-arrow:hover {
+    #about .about-section .interests-container .icons-arrow:hover {
       cursor: pointer; }
 
 #skills {
@@ -258,7 +262,7 @@ header {
       #skills .skills-section .skills-paragraph h1 {
         font-size: 20px;
         font-weight: 100;
-        border: 1px solid #393344;
+        border: 1px solid #FFF;
         padding: 20px;
         max-width: 200px;
         text-transform: uppercase; }
