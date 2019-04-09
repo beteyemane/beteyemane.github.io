@@ -31,7 +31,7 @@ header {
   background-color:$main-purple;
   overflow: hidden;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   a.logo {
     color: $white;
@@ -117,8 +117,8 @@ header {
 }
 
 #home {
-  // background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Regular_triangle.svg');
-  // background-position: center;
+  // background-image: url(assets/white-vector-background.png);
+  // background-position: left;
   // background-repeat: no-repeat;
   // background-size: cover;
   // background-size: 600px;
@@ -145,9 +145,9 @@ header {
       width: 790px;
       padding: 60px 60px 20px 60px;
       h1 {
-        font-size: 80px;
         margin: 0;
         font-weight: 800;
+        display: flex;
       }
       h1, h2, p {
         letter-spacing: 0.5rem;
@@ -299,110 +299,63 @@ header {
         	}
         }
     }
-    .interests-container {
-      background-image: url('https://images.pexels.com/photos/1125761/pexels-photo-1125761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: hidden;
-      display: flex;
-      color: $main-purple;
-      background-color: $main-grey;
-      min-width: 50%;
-      align-items: flex-end;
-      justify-content: flex-end;
-      text-align: center;
-      position: relative;
-      .icons {
-        animation: large 5s linear infinite;
-        font-size: 1rem;
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 0.1rem;
-        margin-right: 15%;
-      }
-      p {
-        color: $white;
-      }
-      p:hover {
-        transform: scale(1.5);
-        cursor: pointer;
-      }
-      .icons-arrow {
-        border-bottom: 5px solid $main-purple;
-        border-right: 5px solid $main-purple;
-        height: 20px;
-        width: 20px;
-        transform: rotate(-45deg);
-        margin: 60px;
-      }
-      .icons-arrow:hover {
-        cursor: pointer;
-      }
-    }
-  }
+    .skills {
+     overflow: hidden;
+     display: flex;
+     color: $main-purple;
+     background-color: $main-grey;
+     min-width: 50%;
+     align-items: flex-end;
+     text-align: center;
+     position: relative;
+     .skills-banner{
+       letter-spacing: 0.3rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-left: 83%;
+       min-width: 100px;
+       height: 100px;
+       border: 1px solid $white;
+       border-radius: 50%;
+       background-color: $main-grey;
+       color: rgba(255, 255, 255, 0.7);
+       left: -20px;
+       margin-bottom: 20px;
+       z-index: 1;
+     }
+     .skills-banner:hover {
+       cursor: pointer;
+     }
+     .icons {
+       animation: large 5s linear infinite;
+       font-size: 1rem;
+       text-transform: uppercase;
+       font-weight: 800;
+       letter-spacing: 0.1rem;
+       margin-right: 15%;
+     }
+     p {
+       position: absolute;
+     }
+     p:hover {
+       transform: scale(1.5);
+       cursor: pointer;
+     }
+     .icons-arrow {
+       border-bottom: 5px solid $main-purple;
+       border-right: 5px solid $main-purple;
+       height: 20px;
+       width: 20px;
+       transform: rotate(-45deg);
+       margin: 60px;
+     }
+     .icons-arrow:hover {
+       cursor: pointer;
+     }
+   }
+ }
 }
-
-//===========SKILLS===========//
-
-#skills {
-  background-color: $main-grey;
-  .skills-section {
-    justify-content: space-between;
-    display: flex;
-    color: $white;
-    .skills-paragraph {
-      text-transform: uppercase;
-      width: 50%;
-      padding: 40px 20px 0 20px;
-      height: 100vh;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      font-weight: 800;
-      font-size: 40px;
-      h1 {
-        font-size: 20px;
-        font-weight: 100;
-        border: 1px solid $white;
-        padding: 20px;
-        max-width: 200px;
-        text-transform: uppercase;
-      }
-      p {
-        display: inline-block;
-      }
-    }
-    .icons-container {
-      width: 50%;
-      overflow: hidden;
-      display: flex;
-      color: $main-purple;
-      min-width: 50%;
-      align-items: center;
-      justify-content: flex-end;
-      text-align: center;
-      position: relative;
-      .icons {
-        padding: 50px;
-        p {
-          display: inline-block;
-          position: absolute;
-          i {
-            font-size: 3rem;
-          }
-          i:hover {
-            cursor: pointer;
-          }
-          i:hover ~ p#html {
-            color: $main-purple;
-          }
-        }
-      }
-    }
-  }
-}
-
 
 //===========EXPERIENCE===========//
 
@@ -645,6 +598,12 @@ header {
   // #home, #about {
   //   padding-top: 40px;
   // }
+  #home {
+    .border {
+      display: flex;
+      align-items: center;
+    }
+  }
   .container {
     min-height: 62px;
     justify-content: flex-end !important;

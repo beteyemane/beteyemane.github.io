@@ -17,7 +17,7 @@ header {
   background-color: #393344;
   overflow: hidden;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%; }
   header a.logo {
     color: #FFF;
@@ -93,9 +93,9 @@ header {
       width: 790px;
       padding: 60px 60px 20px 60px; }
       #home div .border h1 {
-        font-size: 80px;
         margin: 0;
-        font-weight: 800; }
+        font-weight: 800;
+        display: flex; }
       #home div .border h1, #home div .border h2, #home div .border p {
         letter-spacing: 0.5rem; }
       #home div .border h2 {
@@ -207,88 +207,53 @@ header {
         transform: skew(60deg, -30deg) scaleY(0.66667); }
       #about .about-section .skills-container .text .line:nth-child(even) {
         transform: skew(0deg, -30deg) scaleY(1.33333); }
-  #about .about-section .interests-container {
-    background-image: url("https://images.pexels.com/photos/1125761/pexels-photo-1125761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  #about .about-section .skills {
     overflow: hidden;
     display: flex;
     color: #393344;
     background-color: #1C1C1C;
     min-width: 50%;
     align-items: flex-end;
-    justify-content: flex-end;
     text-align: center;
     position: relative; }
-    #about .about-section .interests-container .icons {
+    #about .about-section .skills .skills-banner {
+      letter-spacing: 0.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 83%;
+      min-width: 100px;
+      height: 100px;
+      border: 1px solid #FFF;
+      border-radius: 50%;
+      background-color: #1C1C1C;
+      color: rgba(255, 255, 255, 0.7);
+      left: -20px;
+      margin-bottom: 20px;
+      z-index: 1; }
+    #about .about-section .skills .skills-banner:hover {
+      cursor: pointer; }
+    #about .about-section .skills .icons {
       animation: large 5s linear infinite;
       font-size: 1rem;
       text-transform: uppercase;
       font-weight: 800;
       letter-spacing: 0.1rem;
       margin-right: 15%; }
-    #about .about-section .interests-container p {
-      color: #FFF; }
-    #about .about-section .interests-container p:hover {
+    #about .about-section .skills p {
+      position: absolute; }
+    #about .about-section .skills p:hover {
       transform: scale(1.5);
       cursor: pointer; }
-    #about .about-section .interests-container .icons-arrow {
+    #about .about-section .skills .icons-arrow {
       border-bottom: 5px solid #393344;
       border-right: 5px solid #393344;
       height: 20px;
       width: 20px;
       transform: rotate(-45deg);
       margin: 60px; }
-    #about .about-section .interests-container .icons-arrow:hover {
+    #about .about-section .skills .icons-arrow:hover {
       cursor: pointer; }
-
-#skills {
-  background-color: #1C1C1C; }
-  #skills .skills-section {
-    justify-content: space-between;
-    display: flex;
-    color: #FFF; }
-    #skills .skills-section .skills-paragraph {
-      text-transform: uppercase;
-      width: 50%;
-      padding: 40px 20px 0 20px;
-      height: 100vh;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      font-weight: 800;
-      font-size: 40px; }
-      #skills .skills-section .skills-paragraph h1 {
-        font-size: 20px;
-        font-weight: 100;
-        border: 1px solid #FFF;
-        padding: 20px;
-        max-width: 200px;
-        text-transform: uppercase; }
-      #skills .skills-section .skills-paragraph p {
-        display: inline-block; }
-    #skills .skills-section .icons-container {
-      width: 50%;
-      overflow: hidden;
-      display: flex;
-      color: #393344;
-      min-width: 50%;
-      align-items: center;
-      justify-content: flex-end;
-      text-align: center;
-      position: relative; }
-      #skills .skills-section .icons-container .icons {
-        padding: 50px; }
-        #skills .skills-section .icons-container .icons p {
-          display: inline-block;
-          position: absolute; }
-          #skills .skills-section .icons-container .icons p i {
-            font-size: 3rem; }
-          #skills .skills-section .icons-container .icons p i:hover {
-            cursor: pointer; }
-          #skills .skills-section .icons-container .icons p i:hover ~ p#html {
-            color: #393344; }
 
 #experience {
   background-color: #393344;
@@ -475,6 +440,10 @@ header {
       transform: scale(1.2); }
 
 @media only screen and (max-width: 600px) {
+  #home .border {
+    display: flex;
+    align-items: center; }
+
   .container {
     min-height: 62px;
     justify-content: flex-end !important;

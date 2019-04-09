@@ -3,25 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const navbar = document.querySelector('#nav-links')
   const burger = document.querySelector('.burger')
-  const name = document.querySelector('.name')
-  const arrow = document.querySelector('.arrow')
+  const skills = document.querySelector('.skills')
   const icons = document.querySelectorAll('.icons p')
-  // const skillsArrow = document.querySelector('.skills-arrow')
-  // const iconsArrow = document.querySelector('.icons-arrow')
-  // const skillsContainer = document.querySelector('.skills-container')
-  // const iconsContainer = document.querySelector('.icons-container')
-  // const navIcons = document.querySelectorAll('.nav-icons')
-  // const navTexts = document.querySelectorAll('.nav-texts')
-  // console.log(navIcons, navTexts)
-  //
-  // navIcons.forEach(navIcon => {
-  //   navIcon.addEventListener('mouseover', function(e) {
-  //     e.target.style.display = 'none'
-  //
-  //   })
-  // })
 
-  console.log(icons)
+  console.log(skills)
 
   //sunset barlevard images
   const currentSbImage = document.querySelector('#current-sb-image')
@@ -38,20 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   //wevent images
   const currentWvImage = document.querySelector('#current-wv-image')
   const wvImages = document.querySelectorAll('.wv-images')
-
-  // const text = 'BETE YEMANE'
-  // let i  = 0
-  // const speed = 400
-  //
-  // function typewriter() {
-  //   if (i < text.length) {
-  //     name.innerHTML += text.charAt(i)
-  //     i++
-  //     setTimeout(typewriter, speed)
-  //   }
-  //   if (name.innerHTML.length === text.length)
-  //     arrow.style.display = 'block'
-  // }
 
   //changes src of current image to small image src on click
   function selectImages(images, currentImage) {
@@ -80,23 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
   function iconMovement() {
     icons.forEach(icon => {
       // const random = []
-      const left = Math.floor(Math.random()*600) + 'px'
-      const top = Math.floor(Math.random()* 600) + 'px'
       //while loop
-      icon.style.left = left
-      icon.style.top = top
+      icon.style.left = Math.floor(Math.random()*600) + 'px'
+      icon.style.top = Math.floor(Math.random()* 600) + 'px'
       icon.classList.add('move')
     })
   }
   setInterval(iconMovement, 5000)
   iconMovement()
-
-  function iconHover() {
-    icons.forEach(icon => {
-      icon.addEventListener('mouseover', () => {
-      })
-    })
-  }
 
   function navbarClick() {
     if(navbar.style.display === 'block') {
@@ -106,22 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // function skills() {
-  //   if(iconsContainer.style.display === 'flex') {
-  //     iconsContainer.style.display = 'none'
-  //     skillsContainer.style.display = 'flex'
-  //   } else {
-  //     iconsContainer.style.display = 'flex'
-  //     skillsContainer.style.display = 'none'
-  //   }
-  // }
-
-  // typewriter()
-
   burger.addEventListener('click', navbarClick)
-  // skillsArrow.addEventListener('click', skills)
-  // iconsArrow.addEventListener('click', skills)
 
-  iconHover()
 
 })
