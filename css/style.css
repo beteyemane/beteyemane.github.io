@@ -224,7 +224,7 @@ header {
       margin-left: 83%;
       min-width: 100px;
       height: 100px;
-      border: 1px solid #FFF;
+      border: 1px solid #393344;
       border-radius: 50%;
       background-color: #1C1C1C;
       color: rgba(255, 255, 255, 0.7);
@@ -232,7 +232,8 @@ header {
       margin-bottom: 20px;
       z-index: 1; }
     #about .about-section .skills .skills-banner:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: #393344; }
     #about .about-section .skills .icons {
       animation: large 5s linear infinite;
       font-size: 1rem;
