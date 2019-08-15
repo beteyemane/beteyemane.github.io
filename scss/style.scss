@@ -117,7 +117,7 @@ header {
 }
 
 #home {
-  // background-image: url(assets/white-vector-background.png);
+  // background-image: url('https://images.pexels.com/photos/280466/pexels-photo-280466.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
   // background-position: left;
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -142,7 +142,7 @@ header {
     }
     .border {
       margin-top: 30%;
-      width: 790px;
+      max-width: 790px;
       padding: 60px 60px 20px 60px;
       h1 {
         margin: 0;
@@ -308,6 +308,7 @@ header {
      align-items: flex-end;
      text-align: center;
      position: relative;
+     height: 100vh;
      .skills-banner{
        letter-spacing: 0.3rem;
        display: flex;
@@ -652,6 +653,9 @@ header {
     }
     .icons {
       text-align : center;
+    }
+    .skills-banner {
+      margin-left: 66% !important;
     }
   }
   .experience-section {

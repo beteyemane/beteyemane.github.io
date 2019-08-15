@@ -90,7 +90,7 @@ header {
     justify-content: center; }
     #home div .border {
       margin-top: 30%;
-      width: 790px;
+      max-width: 790px;
       padding: 60px 60px 20px 60px; }
       #home div .border h1 {
         margin: 0;
@@ -215,7 +215,8 @@ header {
     min-width: 50%;
     align-items: flex-end;
     text-align: center;
-    position: relative; }
+    position: relative;
+    height: 100vh; }
     #about .about-section .skills .skills-banner {
       letter-spacing: 0.3rem;
       display: flex;
@@ -484,6 +485,8 @@ header {
       border: none !important; }
     .about-section .icons {
       text-align: center; }
+    .about-section .skills-banner {
+      margin-left: 66% !important; }
 
   .experience-section {
     flex-direction: column;
