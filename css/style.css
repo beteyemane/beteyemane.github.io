@@ -283,6 +283,9 @@ header {
     #experience .experience-section div {
       min-width: 33%;
       padding: 0 10px; }
+      #experience .experience-section div .covarius {
+        height: 60px;
+        font-weight: bold; }
       #experience .experience-section div .logo-div {
         justify-content: center;
         display: flex; }
